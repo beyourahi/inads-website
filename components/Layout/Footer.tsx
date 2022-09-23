@@ -12,10 +12,10 @@ import { footer } from "data";
 const { links, PO, state, email, telephone } = footer;
 
 export const Footer: React.FC = () => (
-    <footer>
-        <div className="container mx-auto px-36 divide-y-[1px] divide-white/25">
+    <footer className="bg-black text-white">
+        <div className="container mx-auto px-36 ⚡ divide-y-[1px] divide-white/25">
             {/* Top */}
-            <div className="flex justify-between py-16">
+            <div className="flex justify-between py-24">
                 {/* Logo */}
                 <div>
                     <Image
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => (
                     </span>
                 </div>
 
-                <div className="flex space-x-4 text-xl">
+                <div className="flex space-x-5 text-xl">
                     <span className="hover:text-primary transition-all ease-in">
                         <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                             <FaFacebookF />

@@ -1,5 +1,5 @@
 export const meta_info = {
-    title: "Inads",
+    brand: "Inads",
     description: "Official website of Inads",
 };
 
