@@ -3,14 +3,15 @@ export const meta_info = {
     description: "Official website of Inads",
 };
 
+export const nav_links = [
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/about" },
+    { name: "Analytics", url: "/analytics" },
+    { name: "Services", url: "/services" },
+    { name: "Contact Us", url: "/contact" },
+];
+
 export const footer = {
-    links: [
-        { name: "Home", url: "/" },
-        { name: "About Us", url: "/about" },
-        { name: "Services", url: "/services" },
-        { name: "Analytics", url: "/analytics" },
-        { name: "Contact Us", url: "/contact" },
-    ],
     PO: "PO: 2255",
     state: "Doha-Qatar",
     email: "info@inadsgroup.com",

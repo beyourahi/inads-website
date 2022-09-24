@@ -8,8 +8,9 @@ import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { footer } from "data";
+import { nav_links } from "data";
 
-const { links, PO, state, email, telephone } = footer;
+const { PO, state, email, telephone } = footer;
 
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white">
@@ -35,7 +36,7 @@ export const Footer: React.FC = () => (
                     <h1 className="text-lg font-medium">QUICK LINKS</h1>
 
                     <div className="flex flex-col space-y-2">
-                        {links.map(link => (
+                        {nav_links.map(link => (
                             <span
                                 key={link.name}
                                 className="hover:text-primary transition-all ease-in"
