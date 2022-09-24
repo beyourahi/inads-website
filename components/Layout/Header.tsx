@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { nav_links } from "data";
 
 export const Header: React.FC = () => (
-    <header className="flex justify-between items-center px-32 bg-transparent sticky top-0 backdrop-blur-lg">
+    <header className="flex justify-between items-center px-32 backdrop-blur-lg bg-transparent">
         {/*//! Brand */}
         <div>
             <Image src="/logo.png" alt="Logo" width={140} height={100} className="object-contain" />

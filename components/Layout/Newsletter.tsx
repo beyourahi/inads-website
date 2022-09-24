@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 export const Newsletter: React.FC = () => (
-    <section className="py-28 relative">
+    <section className="py-28 relative bg-black">
+        {/*//! Side Image */}
         <div className="absolute top-0 right-0 w-[200px] h-[449px]">
             <Image
                 src="/newsletter_image.png"
@@ -11,16 +12,17 @@ export const Newsletter: React.FC = () => (
             />
         </div>
 
+        {/*//! Form Box */}
         <div className="container mx-auto px-36 flex justify-between">
-            <div className="bg-[url('/newsletter_BG.png')] object-contain flex justify-between items-center py-20 px-16 w-full">
-                {/* Heading */}
+            <div className="bg-[url('/newsletter_BG.png')] bg-cover flex justify-between items-center py-20 px-16 w-full">
+                {/*//// Heading */}
                 <div>
                     <h1 className="text-5xl font-bold">
                         Subscribe to our <br /> Newsletter
                     </h1>
                 </div>
 
-                {/* Form */}
+                {/*//// Form */}
                 <form className="space-x-4 w-[55%] flex justify-between">
                     <input
                         type="email"

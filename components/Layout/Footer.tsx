@@ -15,9 +15,9 @@ const { PO, state, email, telephone } = footer;
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white">
         <div className="container mx-auto px-36 ⚡ divide-y-[1px] divide-white/25">
-            {/* Top */}
+            {/*//! Top */}
             <div className="flex justify-between py-24">
-                {/* Logo */}
+                {/*//// Logo */}
                 <div>
                     <Image
                         src="/logo.png"
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => (
                     </h2>
                 </div>
 
-                {/* Quick Links */}
+                {/*//// Quick Links */}
                 <div className="space-y-6">
                     <h1 className="text-lg font-medium">QUICK LINKS</h1>
 
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => (
                     </div>
                 </div>
 
-                {/* Get in touch */}
+                {/*//// Get in touch */}
                 <div className="space-y-6">
                     <h1 className="text-lg font-medium">GET IN TOUCH</h1>
 
@@ -77,7 +77,7 @@ export const Footer: React.FC = () => (
                 </div>
             </div>
 
-            {/* Bottom */}
+            {/*//! Bottom */}
             <div className="flex justify-between py-8">
                 <div>
                     <span className="text-base font-mont">
