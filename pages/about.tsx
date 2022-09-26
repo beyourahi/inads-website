@@ -12,7 +12,7 @@ const About: NextPage = () => (
                         <h1 className="text-primary text-8xl font-black">GLOBALLY</h1>
                         <h2 className="text-5xl">CONNECTED LARGE</h2>
                         <h2 className="text-5xl">
-                            <span className="underline underline-offset-[50px] decoration-primary">
+                            <span className="underline underline-offset-[40px] decoration-primary">
                                 NET
                             </span>
                             WORK
@@ -21,7 +21,7 @@ const About: NextPage = () => (
 
                     <div className="flex flex-col space-y-4">
                         <h3 className="text-4xl">About Us</h3>
-                        <span className="text-xl">Home - About us</span>
+                        <span className="text-lg">Home - About us</span>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const About: NextPage = () => (
             <div className="relative">
                 <div className="flex items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90 font-black text-[9rem]">
                     <h1
-                        className="text-black opacity-50 tracking-widest"
+                        className="text-black opacity-30 tracking-widest"
                         style={{ WebkitTextStroke: "1px white" }}
                     >
                         ABOUT US
@@ -39,9 +39,18 @@ const About: NextPage = () => (
 
                 <div className="container mx-auto px-16 py-28 space-y-24">
                     {/*//// Top */}
-                    <div className="flex bg-black space-x-32">
-                        <div className="w-[45%] bg-[url('/meeting.png')] bg-cover"></div>
-                        <div className="space-y-16 w-[55%]">
+                    <div className="flex items-center bg-black">
+                        <div className="w-[50%] relative z-20">
+                            <Image
+                                src="/meeting.png"
+                                alt="Pointing Image"
+                                width={633}
+                                height={424}
+                                className="object-contain z-20"
+                            />
+                            <div className="absolute bg-secondary w-72 h-72 -top-5 left-5 z-10"></div>
+                        </div>
+                        <div className="space-y-16 w-[50%]">
                             <h1 className="text-6xl font-bold">
                                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                                     W
@@ -61,8 +70,8 @@ const About: NextPage = () => (
                     </div>
 
                     {/*//// Bottom */}
-                    <div className="flex bg-black space-x-32">
-                        <div className="space-y-16 w-[55%]">
+                    <div className="flex bg-black items-center space-x-12">
+                        <div className="space-y-16 w-[50%]">
                             <p className="text-2xl break-all">
                                 We use experts in research to understand how a client&apos;s target
                                 consumers think, feel and act about certain things in certain
@@ -82,7 +91,16 @@ const About: NextPage = () => (
                                 meets their goals.
                             </p>
                         </div>
-                        <div className="w-[45%] bg-[url('/art.png')] bg-cover"></div>
+                        <div className="w-[50%] relative z-20">
+                            <Image
+                                src="/art.png"
+                                alt="Pointing Image"
+                                width={679}
+                                height={483}
+                                className="object-contain z-20"
+                            />
+                            <div className="absolute bg-secondary w-72 h-[530px] -top-6 right-10 z-10"></div>
+                        </div>
                     </div>
                 </div>
             </div>
