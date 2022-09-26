@@ -29,12 +29,12 @@ export const Newsletter: React.FC = () => (
                         name="email"
                         id="email"
                         placeholder="Email"
-                        className="w-full py-5 px-6 text-black text-lg rounded-md border-2 border-white border-solid outline-none focus:outline-primary focus:outline-offset-0 focus:outline-[3px] transition-all ease-in"
+                        className="w-full py-4 px-4 text-black text-lg rounded-md border-2 border-white border-solid outline-none focus:outline-primary focus:outline-offset-0 focus:outline-[3px] transition-all ease-in"
                     />
                     <a
                         href="#"
                         type="submit"
-                        className="bg-primary hover:bg-secondary transition-all ease-in font-bold px-14 py-5 rounded-md text-xl"
+                        className="bg-primary hover:bg-secondary transition-all ease-in font-bold px-12 py-4 rounded-md text-xl"
                     >
                         <span>Subscribe</span>
                     </a>

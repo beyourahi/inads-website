@@ -3,13 +3,15 @@ import { Layout } from "../components";
 
 const Home: NextPage = () => (
     <Layout page="Home">
-        {/* Hero */}
+        <div>
+            {/* Hero */}
 
-        {/* About Us  */}
+            {/* About Us  */}
 
-        {/* Features  */}
+            {/* Features  */}
 
-        {/* Contact Us */}
+            {/* Contact Us */}
+        </div>
     </Layout>
 );
 

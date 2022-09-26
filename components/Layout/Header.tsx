@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { nav_links } from "data";
 
 export const Header: React.FC = () => (
-    <header className="flex justify-between items-center px-32 backdrop-blur-lg bg-transparent">
+    <header className="flex justify-between items-center px-32 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50">
         {/*//! Brand */}
         <div>
             <Image src="/logo.png" alt="Logo" width={140} height={100} className="object-contain" />
@@ -23,7 +23,6 @@ export const Header: React.FC = () => (
         </div>
 
         {/*//! Social Icons */}
-
         <div className="flex space-x-5 text-xl">
             <span className="hover:text-primary transition-all ease-in">
                 <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
