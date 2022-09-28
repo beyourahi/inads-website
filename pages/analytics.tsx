@@ -27,7 +27,7 @@ const Analytics: NextPage = () => (
             </div>
 
             {/*//! Analytics */}
-            <div className="relative overflow-clip">
+            <div className="bg-black relative overflow-clip">
                 <div className="flex items-center justify-center absolute top-0 font-black text-[7rem]">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((obj, index) => (
                         <h1
