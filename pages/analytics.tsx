@@ -10,7 +10,8 @@ const Analytics: NextPage = () => (
                 className="pb-36 pt-56"
                 style={{
                     background:
-                        "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url('blockchain.png')",
+                        "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url('/blockchain.png')",
+                    backgroundSize: "cover",
                 }}
             >
                 <div className="container mx-auto px-36 flex justify-between items-center">
