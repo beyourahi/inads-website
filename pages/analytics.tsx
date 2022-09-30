@@ -6,7 +6,13 @@ const Analytics: NextPage = () => (
     <Layout page="Analytics">
         <div>
             {/*//! Hero */}
-            <div className="bg-[url('/blockchain.png')] bg-cover pb-36 pt-56">
+            <div
+                className="pb-36 pt-56"
+                style={{
+                    background:
+                        "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url('blockchain.png')",
+                }}
+            >
                 <div className="container mx-auto px-36 flex justify-between items-center">
                     <div className="space-y-3">
                         <h1 className="text-primary text-8xl font-black">MEASURABLE</h1>

@@ -4,7 +4,7 @@ import random_image2 from "../../public/random_image2.png";
 import aboutus_image from "../../public/aboutus_image.png";
 
 export const HeroAbout: React.FC = () => (
-    <div className="py-28 bg-black relative">
+    <div id="about" className="py-28 bg-[url('/home_about_bg.png')] bg-black bg-cover relative">
         <div className="absolute bottom-0 right-0">
             <Image src={aboutus_image} alt="Random Shape" />
         </div>

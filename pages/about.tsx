@@ -105,7 +105,7 @@ const About: NextPage = () => (
         </div>
 
         {/*//! Vision */}
-        <div className="flex bg-black">
+        <div className="flex bg-[#0C0D0E]">
             <div className="w-[45%] bg-[url('/specs.png')] bg-cover"></div>
             <div className="space-y-16 p-28 w-[55%]">
                 <h1 className="text-6xl font-bold">
@@ -122,7 +122,7 @@ const About: NextPage = () => (
         </div>
 
         {/*//! Mission */}
-        <div className="flex bg-black">
+        <div className="flex bg-[#0C0D0E]">
             <div className="space-y-16 p-28 w-[55%]">
                 <h1 className="text-6xl font-bold">
                     <span className="underline underline-offset-[30px] decoration-2 decoration-primary">

@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Counter, Features, Hero, HeroAbout, Layout } from "../components";
+import { Contact, Counter, Features, Hero, HeroAbout, Layout } from "../components";
 
 const Home: NextPage = () => (
     <Layout page="Home">
@@ -16,6 +16,7 @@ const Home: NextPage = () => (
         <Counter />
 
         {/*//! Contact Us */}
+        <Contact />
     </Layout>
 );
 
