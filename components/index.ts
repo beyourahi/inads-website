@@ -9,6 +9,9 @@ import { ContactInfo } from "./Contact/ContactInfo";
 import { ContactForm } from "./Contact/ContactForm";
 import { ServicesHero } from "./Services/ServicesHero";
 import { ServicesList } from "./Services/ServicesList";
+import { AnalyticsHero } from "./Analytics/AnalyticsHero";
+import { AnalyticsMasthead } from "./Analytics/AnalyticsMasthead";
+import { MeasurementAnalysis } from "./Analytics/MeasurementAnalysis";
 
 export {
     Layout,
@@ -22,4 +25,7 @@ export {
     ContactForm,
     ServicesHero,
     ServicesList,
+    AnalyticsHero,
+    AnalyticsMasthead,
+    MeasurementAnalysis,
 };
