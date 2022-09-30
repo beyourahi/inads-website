@@ -2,8 +2,9 @@ import Image from "next/image";
 import random_image1 from "../../public/random_image1.png";
 import random_image2 from "../../public/random_image2.png";
 import aboutus_image from "../../public/aboutus_image.png";
+import Link from "next/link";
 
-export const HeroAbout: React.FC = () => (
+export const HomeAbout: React.FC = () => (
     <div id="about" className="py-28 bg-[url('/home_about_bg.png')] bg-black bg-cover relative">
         <div className="absolute bottom-0 right-0">
             <Image src={aboutus_image} alt="Random Shape" />
@@ -41,9 +42,11 @@ export const HeroAbout: React.FC = () => (
                     achieve the optimum results in the right set of media channels.{" "}
                 </p>
 
-                <div className="bg-secondary px-9 py-4 font-semibold text-lg">
-                    <a href="#">See More</a>
-                </div>
+                <Link href="/about">
+                    <span className="bg-primary hover:bg-secondary px-9 py-4 font-semibold text-lg cursor-pointer transition-all ease-in">
+                        See More
+                    </span>
+                </Link>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { HiArrowNarrowDown } from "react-icons/hi";
 import play from "../../public/play.png";
 
-export const Hero: React.FC = () => (
+export const HomeHero: React.FC = () => (
     <div className="h-full flex justify-start items-center relative">
         {/*//// Background Video */}
         <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover">
@@ -65,9 +65,9 @@ export const Hero: React.FC = () => (
         {/*//// Arrow  */}
         <a
             href="#about"
-            className="z-20 absolute bottom-0 left-[50%] text-4xl mb-12 bg-primary bg-opacity-10 p-3 rounded-full animate-bounce"
+            className="z-20 absolute bottom-0 left-[50%] text-4xl mb-12 bg-primary bg-opacity-5 hover:bg-opacity-20 p-3 rounded-full animate-bounce transition-all ease-in"
         >
-            <HiArrowNarrowDown color="#70dd36" />
+            <HiArrowNarrowDown className="text-primary" />
         </a>
     </div>
 );

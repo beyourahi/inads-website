@@ -9,7 +9,7 @@ import IG7 from "../../public/IG7.png";
 import IG8 from "../../public/IG8.png";
 import features_image from "../../public/features_image.png";
 
-export const Features: React.FC = () => (
+export const HomeFeatures: React.FC = () => (
     <div className="bg-black py-28 relative">
         <div className="absolute top-0 left-0">
             <Image src={features_image} alt="Random Shape" />
@@ -47,9 +47,9 @@ export const Features: React.FC = () => (
                 </div>
 
                 {/*//! Button */}
-                <div className="bg-secondary px-9 py-4 font-semibold text-lg">
-                    <a href="#">See More</a>
-                </div>
+                <a className="bg-primary hover:bg-secondary px-9 py-4 font-semibold text-lg cursor-pointer transition-all ease-in">
+                    See More
+                </a>
             </div>
         </div>
     </div>

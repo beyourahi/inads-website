@@ -1,4 +1,4 @@
-export const Counter: React.FC = () => (
+export const HomeCounter: React.FC = () => (
     <div className="bg-[url('/home_counter_bg.png')] bg-black bg-cover py-28">
         <div className="container mx-auto px-36 flex justify-center divide-x-2 divide-primary">
             <div className="flex flex-col items-center justify-center space-y-8 w-1/3 py-8">

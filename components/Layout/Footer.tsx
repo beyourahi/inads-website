@@ -6,10 +6,10 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 import { footer } from "data";
 import { nav_links } from "data";
 import logo from "../../public/logo.png";
+import whatsapp from "../../public/whatsapp.png";
 
 const { PO, state, email, telephone } = footer;
 
@@ -63,9 +63,11 @@ export const Footer: React.FC = () => (
                             <span>{email}</span>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <span className="text-primary text-2xl">
-                                <FaPhoneAlt />
-                            </span>
+                            <Image
+                                src={whatsapp}
+                                alt="WhatsApp"
+                                className="object-contain text-primary"
+                            />
                             <span>{telephone}</span>
                         </div>
                     </div>

@@ -52,12 +52,12 @@ export const ContactForm: React.FC = () => (
                             className="col-span-2 row-span-3 resize-none px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
-                        <button
+                        <a
                             type="submit"
-                            className="bg-secondary col-span-2 px-9 py-4 font-semibold text-xl text-center tracking-wider"
+                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-semibold text-xl text-center cursor-pointer transition-all ease-in"
                         >
                             Submit
-                        </button>
+                        </a>
                     </form>
                 </div>
 

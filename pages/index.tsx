@@ -1,22 +1,22 @@
 import type { NextPage } from "next";
-import { Contact, Counter, Features, Hero, HeroAbout, Layout } from "../components";
+import { HomeContact, HomeCounter, HomeFeatures, HomeHero, HomeAbout, Layout } from "../components";
 
 const Home: NextPage = () => (
     <Layout page="Home">
         {/*//! Hero */}
-        <Hero />
+        <HomeHero />
 
         {/*//!  About Us  */}
-        <HeroAbout />
+        <HomeAbout />
 
         {/*//!  Features  */}
-        <Features />
+        <HomeFeatures />
 
         {/*//! Counter */}
-        <Counter />
+        <HomeCounter />
 
         {/*//! Contact Us */}
-        <Contact />
+        <HomeContact />
     </Layout>
 );
 

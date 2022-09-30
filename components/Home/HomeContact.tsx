@@ -4,7 +4,7 @@ import contact_image2 from "../../public/contact_image2.png";
 import contact_shape1 from "../../public/contact_shape1.png";
 import contact_shape2 from "../../public/contact_shape2.png";
 
-export const Contact: React.FC = () => (
+export const HomeContact: React.FC = () => (
     <div className="bg-black relative py-28">
         <div className="absolute bottom-0 left-0 flex flex-col">
             <Image src={contact_shape1} alt="Random Shape" />
@@ -62,7 +62,7 @@ export const Contact: React.FC = () => (
 
                         <button
                             type="submit"
-                            className="bg-secondary col-span-2 px-9 py-4 font-semibold text-xl text-center tracking-wider"
+                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-semibold text-xl text-center tracking-wider transition-all ease-in"
                         >
                             Submit
                         </button>
