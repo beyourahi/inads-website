@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Features, Hero, HeroAbout, Layout } from "../components";
+import { Counter, Features, Hero, HeroAbout, Layout } from "../components";
 
 const Home: NextPage = () => (
     <Layout page="Home">
@@ -11,6 +11,9 @@ const Home: NextPage = () => (
 
         {/*//!  Features  */}
         <Features />
+
+        {/*//! Counter */}
+        <Counter />
 
         {/*//! Contact Us */}
     </Layout>
