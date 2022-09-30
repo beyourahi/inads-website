@@ -1,6 +1,6 @@
 import { Layout } from "./Layout/Layout";
-import { Header } from "./Layout/Header";
-import { Newsletter } from "./Layout/Newsletter";
-import { Footer } from "./Layout/Footer";
+import { Hero } from "./Home/Hero";
+import { HeroAbout } from "./Home/HeroAbout";
+import { Features } from "./Home/Features";
 
-export { Layout, Header, Newsletter, Footer };
+export { Layout, Hero, HeroAbout, Features };
