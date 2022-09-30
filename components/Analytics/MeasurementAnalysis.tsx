@@ -15,7 +15,17 @@ export const MeasurementAnalysis: React.FC = () => (
             </h1>
 
             {/*//! Steps */}
-            <div className="flex">
+            <div className="flex relative">
+                {/*//// Hollow Text */}
+                <div className="absolute bottom-[50%] -left-[45%] -rotate-90 font-black text-9xl z-20">
+                    <h1
+                        className="text-transparent opacity-20 tracking-wider"
+                        style={{ WebkitTextStroke: "1px white" }}
+                    >
+                        ANALYTICS
+                    </h1>
+                </div>
+
                 <div className="w-[60%] space-y-8">
                     <div className="flex items-center space-x-9">
                         <h1 className="text-primary text-3xl font-medium">Step 1</h1>
