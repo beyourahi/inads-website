@@ -15,9 +15,9 @@ export const HomeFeatures: React.FC = () => (
             <Image src={features_image} alt="Random Shape" />
         </div>
 
-        <div className="flex items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90 font-black text-[9rem]">
+        <div className="flex items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90 font-np font-black text-[9rem]">
             <h1
-                className="text-black opacity-30 tracking-widest"
+                className="text-black opacity-20 tracking-widest"
                 style={{ WebkitTextStroke: "1px white" }}
             >
                 FEATURES
@@ -26,7 +26,7 @@ export const HomeFeatures: React.FC = () => (
 
         <div className="container mx-auto px-36 flex flex-col space-y-20">
             {/*//! Heading  */}
-            <h1 className="text-6xl font-bold">
+            <h1 className="text-6xl font-np font-bold">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     O
                 </span>
@@ -47,7 +47,7 @@ export const HomeFeatures: React.FC = () => (
                 </div>
 
                 {/*//! Button */}
-                <a className="bg-primary hover:bg-secondary px-9 py-4 font-semibold text-lg cursor-pointer transition-all ease-in">
+                <a className="bg-primary hover:bg-secondary px-10 py-4 font-inter font-bold text-lg cursor-pointer transition-all ease-in">
                     See More
                 </a>
             </div>

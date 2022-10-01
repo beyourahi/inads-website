@@ -17,7 +17,7 @@ export const ServicesList = () => (
     <div className="bg-black py-28">
         <div className="container mx-auto px-28 flex flex-col space-y-32">
             {/*//! Heading  */}
-            <h1 className="text-6xl font-bold">
+            <h1 className="text-6xl font-np font-bold">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     O
                 </span>
@@ -29,10 +29,10 @@ export const ServicesList = () => (
                 {/*//// Service 1 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">
+                        <h1 className="text-primary text-3xl font-np font-medium">
                             Media Planning & Strategy
                         </h1>
-                        <p className="text-lg break-normal">
+                        <p className="text-lg font-ps font-normal break-normal">
                             INADS focuses on understanding what media a client&apos;s target
                             customer reads, watches, interacts with or hears to develop a strategic
                             plan of relevant advertising opportunities ( broadcast/online display
@@ -58,8 +58,8 @@ export const ServicesList = () => (
                         <Image src={IG2} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Creativity</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Creativity</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We are versed in concept knowledge, copywriting, and graphic design, as
                             well as brand engineering and studio work
                         </p>
@@ -69,8 +69,8 @@ export const ServicesList = () => (
                 {/*//// Service 3 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Production</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Production</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We use some of the most advanced commercial printing equipment to create
                             clear high deﬁnition prints & banners including digital printing, Oﬀset
                             Printing, Vehicle Branding, Heat Transfer Printing.
@@ -93,8 +93,8 @@ export const ServicesList = () => (
                         <Image src={IG4} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Social Media</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Social Media</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             INADS believes that we&apos;re in an Age of Dialogue, a time in which
                             marketing remains inﬂuential in the way consumers perceive brands and
                             what they buy and consume. So, INADS sees the value in integrating its
@@ -111,8 +111,8 @@ export const ServicesList = () => (
                 {/*//// Service 5 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Online Media</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Online Media</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             Online media planning has never been more important to devise powerful
                             and eﬀective media campaigns online. We work to make sure you&apos;re
                             optimizing your online presence and making the sale before consumers
@@ -140,8 +140,8 @@ export const ServicesList = () => (
                         <Image src={branding} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Branding</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Branding</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We help you build a memorable brand by creating a face and voice for
                             your brand, from the logo to the font to the way we tell your story; Key
                             messaging, Logo/identity, Advertising campaigns Video storytelling
@@ -154,10 +154,10 @@ export const ServicesList = () => (
                 {/*//// Service 7 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">
+                        <h1 className="text-primary text-3xl font-np font-medium">
                             Photography & Video Production
                         </h1>
-                        <p className="text-lg break-normal">
+                        <p className="text-lg font-ps font-normal break-normal">
                             Introduce the world to your business with authentic with high-quality
                             video production content, Professionally shot and high-resolution photos
                             of your team, locations, products, customers and events that would
@@ -178,8 +178,8 @@ export const ServicesList = () => (
                         <Image src={blogging} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Blogging</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Blogging</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We provide Blogging strategy which help to attracts customers and new
                             visitors through a variety of channels including organic search traffic
                             (SEO), social media, email and more, considered as an add value in
@@ -192,8 +192,10 @@ export const ServicesList = () => (
                 {/*//// Service 9 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Exhibitions Stands</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">
+                            Exhibitions Stands
+                        </h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We are passionate about supplying innovative exhibition stands from the
                             brieﬁng stage to the ﬁnal execution of the exhibition stand design, we
                             take care of everything for you which build on your brand identity and
@@ -221,8 +223,8 @@ export const ServicesList = () => (
                         <Image src={signage} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Signage</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Signage</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We have invented some of the best, most advanced processes for printing
                             custom signs. Our methods ensure that you get the highest quality sign,
                             in the least amount of time. We build and print all types of signage
@@ -237,8 +239,8 @@ export const ServicesList = () => (
                 {/*//// Service 11 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Gift Items</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Gift Items</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             Recognize a job well done, celebrate new working relationships or ring
                             in the holidays with custom corporate gifts. We have thousands of
                             gifting options to tell clients, employees or executives how much you
@@ -264,8 +266,8 @@ export const ServicesList = () => (
                         <Image src={uniforms} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Uniforms</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Uniforms</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We design, develop and manufacture professional high-quality uniforms
                             and handle all your supply chain and logistics needs. Our individualized
                             aftersales services can include onsite ﬁttings, alterations, entitlement
@@ -279,8 +281,8 @@ export const ServicesList = () => (
                 {/*//// Service 13 */}
                 <div className="flex space-x-28">
                     <div className="space-y-10 w-1/2">
-                        <h1 className="text-primary text-3xl font-medium">Events</h1>
-                        <p className="text-lg break-normal">
+                        <h1 className="text-primary text-3xl font-np font-medium">Events</h1>
+                        <p className="text-lg font-ps font-normal break-normal">
                             We create events that will leave your guests with a lasting impression
                             by crafting specialty programming for a wide variety of events, such as
                             meetings, conferences, trade shows, product launches, awards galas,
