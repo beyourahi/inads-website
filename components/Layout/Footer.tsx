@@ -13,6 +13,13 @@ import whatsapp from "../../public/whatsapp.png";
 
 const { PO, state, email, telephone } = footer;
 
+const social_icons = [
+    { name: "Facebook", url: "https://www.facebook.com", icon: <FaFacebookF /> },
+    { name: "LinkedIn", url: "https://www.linkedin.com", icon: <FaLinkedinIn /> },
+    { name: "Twitter", url: "https://www.twitter.com", icon: <FaTwitter /> },
+    { name: "Instagram", url: "https://www.instagram.com", icon: <FaInstagram /> },
+];
+
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white divide-y-[1px] divide-white/25">
         <div className="container mx-auto px-36">
@@ -21,20 +28,20 @@ export const Footer: React.FC = () => (
                 {/*//// Logo */}
                 <div className="space-y-6">
                     <Image src={logo} alt="Logo" className="object-contain" />
-                    <h2 className="text-lg">
+                    <h2 className="text-lg font-ps font-normal">
                         Innovative street level <br /> media company in Qatar
                     </h2>
                 </div>
 
                 {/*//// Quick Links */}
                 <div className="space-y-6">
-                    <h1 className="text-lg font-medium">QUICK LINKS</h1>
+                    <h1 className="text-lg font-np font-medium">QUICK LINKS</h1>
 
                     <div className="flex flex-col space-y-2">
                         {nav_links.map(link => (
                             <span
                                 key={link.name}
-                                className="hover:text-primary transition-all ease-in"
+                                className="hover:text-primary font-ps font-normal transition-all ease-in"
                             >
                                 <Link href={link.url}>{link.name}</Link>
                             </span>
@@ -44,14 +51,14 @@ export const Footer: React.FC = () => (
 
                 {/*//// Get in touch */}
                 <div className="space-y-6">
-                    <h1 className="text-lg font-medium">GET IN TOUCH</h1>
+                    <h1 className="text-lg font-np font-medium">GET IN TOUCH</h1>
 
                     <div className="flex flex-col space-y-6">
                         <div className="flex items-center space-x-4">
                             <span className="text-primary text-2xl">
                                 <FaMapMarkerAlt />
                             </span>
-                            <span>
+                            <span className="font-ps font-normal">
                                 {PO} <br />
                                 {state}
                             </span>
@@ -60,7 +67,7 @@ export const Footer: React.FC = () => (
                             <span className="text-primary text-2xl">
                                 <MdEmail />
                             </span>
-                            <span>{email}</span>
+                            <span className="font-ps font-normal">{email}</span>
                         </div>
                         <div className="flex items-center space-x-4">
                             <Image
@@ -68,7 +75,7 @@ export const Footer: React.FC = () => (
                                 alt="WhatsApp"
                                 className="object-contain text-primary"
                             />
-                            <span>{telephone}</span>
+                            <span className="font-ps font-normal">{telephone}</span>
                         </div>
                     </div>
                 </div>
@@ -82,30 +89,17 @@ export const Footer: React.FC = () => (
                     </span>
                 </div>
 
-                <div className="flex space-x-5 text-xl">
-                    <span className="hover:text-primary hover:scale-110 transition-all ease-in">
-                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-                            <FaFacebookF />
-                        </a>
-                    </span>
-
-                    <span className="hover:text-primary hover:scale-110 transition-all ease-in">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                            <FaLinkedinIn />
-                        </a>
-                    </span>
-
-                    <span className="hover:text-primary hover:scale-110 transition-all ease-in">
-                        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                            <FaTwitter />
-                        </a>
-                    </span>
-
-                    <span className="hover:text-primary hover:scale-110 transition-all ease-in">
-                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-                            <FaInstagram />
-                        </a>
-                    </span>
+                <div className="flex space-x-6 text-xl">
+                    {social_icons.map(icon => (
+                        <span
+                            key={icon.name}
+                            className="hover:text-primary hover:scale-110 transition-all ease-in"
+                        >
+                            <a href={icon.url} target="_blank" rel="noreferrer">
+                                {icon.icon}
+                            </a>
+                        </span>
+                    ))}
                 </div>
             </div>
         </div>

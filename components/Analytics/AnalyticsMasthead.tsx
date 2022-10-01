@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export const AnalyticsMasthead: React.FC = () => (
     <div className="bg-black relative overflow-clip">
-        <div className="flex items-center justify-center absolute top-0 font-black text-[7rem]">
+        <div className="flex items-center justify-center absolute top-0">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((obj, index) => (
                 <h1
                     key={index}
-                    className="text-black opacity-20 tracking-widest"
+                    className="text-black font-np font-black text-[7rem] opacity-[0.15] tracking-widest"
                     style={{ WebkitTextStroke: "1px white", wordSpacing: "2rem" }}
                 >
                     ANALYTICS
@@ -40,13 +40,13 @@ export const AnalyticsMasthead: React.FC = () => (
             </div>
 
             <div className="space-y-16 w-2/5">
-                <h1 className="text-6xl font-bold">
+                <h1 className="text-6xl font-np font-bold">
                     <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                         A
                     </span>
                     nalytics
                 </h1>
-                <p className="text-xl break-all">
+                <p className="text-xl font-ps font-normal break-all">
                     Post campaign Inadsgroup has a variety of reporting and measurement services to
                     quantify a measurable outcomes such as reach, brand lift, website visits,
                     footfall increases, among others.

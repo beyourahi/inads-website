@@ -3,9 +3,9 @@ import Image from "next/image";
 export const AboutUs: React.FC = () => (
     <div className="relative bg-black">
         {/*//! Hollow Text */}
-        <div className="flex items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90 font-black text-[9rem]">
+        <div className="flex items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90">
             <h1
-                className="text-black opacity-30 tracking-widest"
+                className="text-black font-np font-black text-[9rem] opacity-20 tracking-widest"
                 style={{ WebkitTextStroke: "1px white" }}
             >
                 ABOUT US
@@ -26,13 +26,13 @@ export const AboutUs: React.FC = () => (
                     <div className="absolute bg-secondary w-72 h-72 -top-5 left-5 z-10"></div>
                 </div>
                 <div className="space-y-16 w-[50%]">
-                    <h1 className="text-6xl font-bold">
+                    <h1 className="text-6xl font-np font-bold">
                         <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                             W
                         </span>
                         HO&apos;S INADS
                     </h1>
-                    <p className="text-2xl break-all">
+                    <p className="text-2xl font-ps font-normal break-all">
                         INADS group Established in 2019 as a Media & Advertising Company in Qatar. A
                         complete solutions provider for their advertisers with multiple eﬃciencies,
                         including strategic planning, buying clout, social media muscle, content
@@ -47,7 +47,7 @@ export const AboutUs: React.FC = () => (
             {/*//// Bottom */}
             <div className="flex bg-black items-center space-x-12">
                 <div className="space-y-16 w-[50%]">
-                    <p className="text-2xl break-all">
+                    <p className="text-2xl font-ps font-normal break-all">
                         We use experts in research to understand how a client&apos;s target
                         consumers think, feel and act about certain things in certain situations
                         then will use these consumer insights to develop a strategic media

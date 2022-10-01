@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { meta_info } from "../../data";
 import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Navbar } from "./Navbar";
 import { Newsletter } from "./Newsletter";
 
 interface LayoutProps {
@@ -18,10 +18,10 @@ export const Layout = ({ children, page }: LayoutProps) => {
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                {/* <link rel="icon" href="/favicon.ico" /> */}
+                <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <Header />
+            <Navbar />
             {children}
             <Newsletter />
             <Footer />

@@ -5,7 +5,7 @@ export const ContactForm: React.FC = () => (
     <div className="bg-[url('/contact_bg.png')] bg-black bg-cover relative py-28">
         <div className="container mx-auto px-14 flex flex-col space-y-24">
             {/*//! Heading */}
-            <h1 className="text-6xl font-bold text-center">
+            <h1 className="text-6xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t
@@ -21,21 +21,21 @@ export const ContactForm: React.FC = () => (
                             type="text"
                             name="full-name"
                             placeholder="Full Name"
-                            className="px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-5 bg-[#1F1F1F] text-white font-ps font-normal text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
                             type="text"
                             name="subject"
                             placeholder="Subject"
-                            className="px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-5 bg-[#1F1F1F] text-white font-ps font-normal text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
                             type="email"
                             name="email"
                             placeholder="Email"
-                            className="px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-5 bg-[#1F1F1F] text-white font-ps font-normal text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
@@ -43,18 +43,18 @@ export const ContactForm: React.FC = () => (
                             name="phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             placeholder="Phone"
-                            className="px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-5 bg-[#1F1F1F] text-white font-ps font-normal text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <textarea
                             name="comments"
                             placeholder="Write a comment"
-                            className="col-span-2 row-span-3 resize-none px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="col-span-2 row-span-3 resize-none px-6 py-5 bg-[#1F1F1F] text-white font-ps font-normal text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <a
                             type="submit"
-                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-semibold text-xl text-center cursor-pointer transition-all ease-in"
+                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-inter font-bold tracking-wider text-xl text-center cursor-pointer transition-all ease-in"
                         >
                             Submit
                         </a>
