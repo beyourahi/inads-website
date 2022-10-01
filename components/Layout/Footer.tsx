@@ -21,10 +21,10 @@ const social_icons = [
 ];
 
 export const Footer: React.FC = () => (
-    <footer className="bg-black text-white divide-y-[1px] divide-white/25">
-        <div className="container mx-auto px-36">
+    <footer className="bg-red-600 text-white">
+        <div className="container mx-auto px-8 lg:px-24 xl:px-36 divide-y-[1px] divide-white/30">
             {/*//! Top */}
-            <div className="flex justify-between py-24">
+            <div className="flex flex-col justify-between space-y-16 py-16 md:flex-row md:space-y-0 lg:py-24">
                 {/*//// Logo */}
                 <div className="space-y-6">
                     <Image src={logo} alt="Logo" className="object-contain" />
@@ -35,13 +35,13 @@ export const Footer: React.FC = () => (
 
                 {/*//// Quick Links */}
                 <div className="space-y-6">
-                    <h1 className="text-lg font-np font-medium">QUICK LINKS</h1>
+                    <h1 className="text-xl md:text-lg font-np font-medium">QUICK LINKS</h1>
 
                     <div className="flex flex-col space-y-2">
                         {nav_links.map(link => (
                             <span
                                 key={link.name}
-                                className="hover:text-primary font-ps font-normal transition-all ease-in"
+                                className="hover:text-primary text-lg md:text-base font-ps font-normal transition-all ease-in"
                             >
                                 <Link href={link.url}>{link.name}</Link>
                             </span>
@@ -51,14 +51,14 @@ export const Footer: React.FC = () => (
 
                 {/*//// Get in touch */}
                 <div className="space-y-6">
-                    <h1 className="text-lg font-np font-medium">GET IN TOUCH</h1>
+                    <h1 className="text-xl md:text-lg font-np font-medium">GET IN TOUCH</h1>
 
                     <div className="flex flex-col space-y-6">
                         <div className="flex items-center space-x-4">
                             <span className="text-primary text-2xl">
                                 <FaMapMarkerAlt />
                             </span>
-                            <span className="font-ps font-normal">
+                            <span className="text-lg md:text-base font-ps font-normal">
                                 {PO} <br />
                                 {state}
                             </span>
@@ -67,7 +67,9 @@ export const Footer: React.FC = () => (
                             <span className="text-primary text-2xl">
                                 <MdEmail />
                             </span>
-                            <span className="font-ps font-normal">{email}</span>
+                            <span className="text-lg md:text-base font-ps font-normal">
+                                {email}
+                            </span>
                         </div>
                         <div className="flex items-center space-x-4">
                             <Image
@@ -75,7 +77,9 @@ export const Footer: React.FC = () => (
                                 alt="WhatsApp"
                                 className="object-contain text-primary"
                             />
-                            <span className="font-ps font-normal">{telephone}</span>
+                            <span className="text-lg md:text-base font-ps font-normal">
+                                {telephone}
+                            </span>
                         </div>
                     </div>
                 </div>

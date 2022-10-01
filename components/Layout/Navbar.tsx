@@ -24,6 +24,10 @@ const social_icons = [
 ];
 
 export const Navbar: React.FC = () => {
+    const [nav, setNav] = useState(true);
+
+    const handleNav = () => setNav(!nav);
+
     return (
         <nav className="flex justify-between items-center px-32 py-12 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50">
             {/*//! Brand */}
@@ -32,7 +36,7 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/*//! Nav Links */}
-            <ul className="flex space-x-10">
+            <ul className="hidden xl:flex space-x-10">
                 {nav_links.map(link => (
                     <li
                         key={link.name}
@@ -44,7 +48,7 @@ export const Navbar: React.FC = () => {
             </ul>
 
             {/*//! Social Icons */}
-            <div className="flex space-x-6 text-xl">
+            <div className="hidden xl:flex space-x-6 text-xl">
                 {social_icons.map(icon => (
                     <span
                         key={icon.name}
@@ -55,6 +59,55 @@ export const Navbar: React.FC = () => {
                         </a>
                     </span>
                 ))}
+            </div>
+
+            {/*//// Mobile View */}
+            <div onClick={handleNav} className="block xl:hidden">
+                {!nav ? (
+                    <CgClose size={30} className="cursor-pointer" />
+                ) : (
+                    <CgMenuRight size={30} className="cursor-pointer" />
+                )}
+            </div>
+
+            <div
+                className={
+                    !nav
+                        ? "fixed top-0 left-0 w-[50%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-14"
+                        : "fixed left-[-100%] ease-out duration-300"
+                }
+            >
+                <div className="flex flex-col space-y-16">
+                    {/*//! Brand */}
+                    <div>
+                        <Image src={logo} alt="Logo" className="object-contain" />
+                    </div>
+
+                    {/*//! Nav Links */}
+                    <ul className="divide-y-[1px] divide-white/30">
+                        {nav_links.map(link => (
+                            <Link key={link.name} href={link.url}>
+                                <li className="hover:text-primary cursor-pointer font-np font-medium transition-all ease-in text-lg py-6">
+                                    {link.name}
+                                </li>
+                            </Link>
+                        ))}
+                    </ul>
+                </div>
+
+                {/*//! Social Icons */}
+                <div className="flex space-x-8 text-xl">
+                    {social_icons.map(icon => (
+                        <span
+                            key={icon.name}
+                            className="hover:text-primary hover:scale-110 transition-all ease-in"
+                        >
+                            <a href={icon.url} target="_blank" rel="noreferrer">
+                                {icon.icon}
+                            </a>
+                        </span>
+                    ))}
+                </div>
             </div>
         </nav>
     );
