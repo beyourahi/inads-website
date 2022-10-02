@@ -5,15 +5,15 @@ import contact_shape1 from "../../public/contact_shape1.png";
 import contact_shape2 from "../../public/contact_shape2.png";
 
 export const HomeContact: React.FC = () => (
-    <div className="bg-black relative py-28">
-        <div className="absolute bottom-0 left-0 flex flex-col">
+    <div className="bg-black relative py-20 md:py-28">
+        <div className="absolute bottom-0 left-0 flex flex-col z-10">
             <Image src={contact_shape1} alt="Random Shape" />
             <Image src={contact_shape2} alt="Random Shape" />
         </div>
 
-        <div className="container mx-auto px-14 flex flex-col space-y-24">
+        <div className="container mx-auto px-8 flex flex-col space-y-20">
             {/*//! Heading */}
-            <h1 className="text-6xl font-np font-bold text-center">
+            <h1 className="text-4xl md:text-6xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t
@@ -22,28 +22,28 @@ export const HomeContact: React.FC = () => (
             </h1>
 
             {/*//! Form */}
-            <div className="flex items-center space-x-28">
-                <div className="w-[50%]">
-                    <form className="grid grid-cols-2 grid-rows-5 gap-5">
+            <div className="flex items-center space-x-28 z-20">
+                <div className="w-full xl:w-[50%]">
+                    <form className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-5 gap-5">
                         <input
                             type="text"
                             name="full-name"
                             placeholder="Full Name"
-                            className="px-6 py-5 bg-[#1F1F1F] font-ps font-normal text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
                             type="text"
                             name="subject"
                             placeholder="Subject"
-                            className="px-6 py-5 bg-[#1F1F1F] font-ps font-normal text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
                             type="email"
                             name="email"
                             placeholder="Email"
-                            className="px-6 py-5 bg-[#1F1F1F] font-ps font-normal text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <input
@@ -51,25 +51,26 @@ export const HomeContact: React.FC = () => (
                             name="phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             placeholder="Phone"
-                            className="px-6 py-5 bg-[#1F1F1F] font-ps font-normal text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="px-6 py-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <textarea
                             name="comments"
+                            rows={5}
                             placeholder="Write a comment"
-                            className="col-span-2 row-span-3 resize-none font-ps font-normal px-6 py-5 bg-[#1F1F1F] text-white text-lg placeholder:text-white border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="col-span-2 row-span-3 resize-none font-ps font-normal px-6 py-4 bg-[#1F1F1F] text-white text-base md:text-lg  border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
                         />
 
                         <button
                             type="submit"
-                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-inter font-bold text-xl text-center tracking-wider transition-all ease-in"
+                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-inter font-bold text-lg text-center tracking-wider transition-all ease-in"
                         >
                             Submit
                         </button>
                     </form>
                 </div>
 
-                <div className="flex items-end justify-evenly w-[50%]">
+                <div className="hidden xl:flex items-end justify-evenly xl:w-[50%]">
                     <Image src={contact_image1} alt="Contact Image" className="object-contain" />
                     <Image src={contact_image2} alt="Contact Image" className="object-contain" />
                 </div>

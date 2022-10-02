@@ -4,14 +4,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
-import { CgMenuRight } from "react-icons/cg";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { BiMenuAltRight } from "react-icons/bi";
-
-import { AiOutlineClose } from "react-icons/ai";
 import { CgClose } from "react-icons/cg";
-
 import { nav_links } from "data";
 import logo from "../../public/logo.png";
 import { useState } from "react";
@@ -29,9 +23,9 @@ export const Navbar: React.FC = () => {
     const handleNav = () => setNav(!nav);
 
     return (
-        <nav className="flex justify-between items-center px-32 py-12 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50">
+        <nav className="flex justify-between items-center py-8 px-8 xl:px-32 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50">
             {/*//! Brand */}
-            <div>
+            <div className="w-[30%] md:w-full">
                 <Image src={logo} alt="Logo" className="object-contain" />
             </div>
 
@@ -62,25 +56,25 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/*//// Mobile View */}
-            <div onClick={handleNav} className="block xl:hidden">
+            <div onClick={handleNav} className="block z-50 xl:hidden">
                 {!nav ? (
                     <CgClose size={30} className="cursor-pointer" />
                 ) : (
-                    <CgMenuRight size={30} className="cursor-pointer" />
+                    <BiMenuAltRight size={35} className="cursor-pointer" />
                 )}
             </div>
 
             <div
                 className={
                     !nav
-                        ? "fixed top-0 left-0 w-[50%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-14"
-                        : "fixed left-[-100%] ease-out duration-300"
+                        ? "fixed top-0 left-0 w-[100%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-8"
+                        : "fixed top-0 left-[-100%] h-screen ease-out duration-1000"
                 }
             >
                 <div className="flex flex-col space-y-16">
                     {/*//! Brand */}
-                    <div>
-                        <Image src={logo} alt="Logo" className="object-contain" />
+                    <div className="w-[30%]">
+                        <Image src={logo} alt="Logo" className="object-contain " />
                     </div>
 
                     {/*//! Nav Links */}

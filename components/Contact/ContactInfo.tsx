@@ -1,11 +1,12 @@
-import { BsWhatsapp } from "react-icons/bs";
-import { IoMdMailUnread } from "react-icons/io";
-import { ImLocation } from "react-icons/im";
+import location from "../../public/location.png";
+import email from "../../public/email.png";
+import whatsappContact from "../../public/whatsapp_contact.png";
+import Image from "next/image";
 
 export const contact_boxes = [
-    { type: "Location", info: "Hleatan tower, Floor 11, Office 1104", icon: <ImLocation /> },
-    { type: "Mail", info: "info@inadsgroup.com", icon: <IoMdMailUnread /> },
-    { type: "WhatsApp", info: "0097450050602", icon: <BsWhatsapp /> },
+    { type: "Location", info: "Hleatan tower, Floor 11, Office 1104", icon: location },
+    { type: "Mail", info: "info@inadsgroup.com", icon: email },
+    { type: "WhatsApp", info: "0097450050602", icon: whatsappContact },
 ];
 
 export const ContactInfo: React.FC = () => (
@@ -23,7 +24,7 @@ export const ContactInfo: React.FC = () => (
             <div className="flex space-x-5">
                 {contact_boxes.map((item, index) => (
                     <div key={index} className="bg-[#18191B] p-7 flex items-center space-x-6 w-1/3">
-                        <div className="bg-[#26282B] text-primary text-4xl p-4">{item.icon}</div>
+                        <Image src={item.icon} alt="contact images" />
                         <div className="flex flex-col space-y-2">
                             <h1 className="text-2xl font-np font-semibold">{item.type}</h1>
                             <h2 className="text-base font-ps font-normal">{item.info}</h2>
