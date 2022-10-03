@@ -38,7 +38,7 @@ export const HomeHero: React.FC = () => (
                 <h1 className="text-5xl md:text-7xl lg:text-[5rem] xl:text-8xl font-black font-np">
                     We {""}
                     <span className="text-primary">Believe In{" "}</span>
-                    Impressing {""}
+                    Impressions {""}
                     <span className="text-primary ">That{" "}</span>
                     Lasts
                 </h1>

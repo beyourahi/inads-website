@@ -61,9 +61,13 @@ export const Footer: React.FC = () => (
                             <span className="text-primary text-2xl">
                                 <MdEmail />
                             </span>
-                            <span className="text-lg md:text-base lg:text-lg font-ps font-normal">
+
+                            <a
+                                href="mailto:info@inadsgroup.com"
+                                className="text-lg md:text-base lg:text-lg font-ps font-normal"
+                            >
                                 {email}
-                            </span>
+                            </a>
                         </div>
                         <div className="flex items-center space-x-4">
                             <Image
@@ -104,7 +108,7 @@ export const Footer: React.FC = () => (
                     {social_icons.map(icon => (
                         <span
                             key={icon.name}
-                            className="hover:text-primary hover:scale-110 transition-all ease-in duration-100"
+                            className="hover:text-primary hover:scale-[1.3] transition-all ease-in duration-100"
                         >
                             <a href={icon.url} target="_blank" rel="noreferrer">
                                 {icon.icon}

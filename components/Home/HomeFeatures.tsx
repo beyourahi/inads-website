@@ -1,12 +1,5 @@
 import Image from "next/image";
-import IG1 from "../../public/IG1.png";
-import IG2 from "../../public/IG2.png";
-import IG3 from "../../public/IG3.png";
-import IG4 from "../../public/IG4.png";
-import IG5 from "../../public/IG5.png";
-import IG6 from "../../public/IG6.png";
-import IG7 from "../../public/IG7.png";
-import IG8 from "../../public/IG8.png";
+import { image_gallery } from "data";
 import features_image from "../../public/features_image.png";
 
 export const HomeFeatures: React.FC = () => (
@@ -38,14 +31,16 @@ export const HomeFeatures: React.FC = () => (
             <div className="flex flex-col items-center space-y-16">
                 {/*//! Image Gallery */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:grid-rows-2 gap-4">
-                    <Image src={IG1} alt="IG1" objectFit="cover" />
-                    <Image src={IG2} alt="IG2" objectFit="cover" />
-                    <Image src={IG3} alt="IG3" objectFit="cover" />
-                    <Image src={IG4} alt="IG4" objectFit="cover" />
-                    <Image src={IG5} alt="IG5" objectFit="cover" />
-                    <Image src={IG6} alt="IG6" objectFit="cover" />
-                    <Image src={IG7} alt="IG7" objectFit="cover" />
-                    <Image src={IG8} alt="IG8" objectFit="cover" />
+                    {image_gallery.map((image, index) => (
+                        <div key={index} className="group relative flex justify-center">
+                            <Image src={image.src} alt="Feature Image" objectFit="cover" />
+                            <div className="group-hover:opacity-100 group-hover:bottom-0 absolute opacity-0 -bottom-96 h-[65%] w-[85%] flex justify-center items-center bg-secondary bg-opacity-75 transition-all ease-in-out duration-[400ms]">
+                                <h1 className="text-3xl font-bold font-np text-center">
+                                    {image.text}
+                                </h1>
+                            </div>
+                        </div>
+                    ))}
                 </div>
 
                 {/*//! Button */}

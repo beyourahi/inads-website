@@ -5,6 +5,14 @@ import { FaInstagram } from "react-icons/fa";
 import location from "./public/location.png";
 import email from "./public/email.png";
 import whatsappContact from "./public/whatsapp_contact.png";
+import IG1 from "./public/IG1.png";
+import IG2 from "./public/IG2.png";
+import IG3 from "./public/IG3.png";
+import IG4 from "./public/IG4.png";
+import IG5 from "./public/IG5.png";
+import IG6 from "./public/IG6.png";
+import IG7 from "./public/IG7.png";
+import IG8 from "./public/IG8.png";
 
 export const meta_info = {
     brand: "Inads",
@@ -17,6 +25,17 @@ export const nav_links = [
     { name: "Analytics", url: "/analytics" },
     { name: "Services", url: "/services" },
     { name: "Contact Us", url: "/contact" },
+];
+
+export const image_gallery = [
+    { src: IG1, text: "Media Planning & Strategy" },
+    { src: IG2, text: "Creativity" },
+    { src: IG3, text: "Production" },
+    { src: IG7, text: "Branding" },
+    { src: IG4, text: "Social Media" },
+    { src: IG8, text: "Photography & Video Production" },
+    { src: IG6, text: "Blogging" },
+    { src: IG5, text: "Events" },
 ];
 
 export const social_icons = [

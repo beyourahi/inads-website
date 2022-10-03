@@ -5,7 +5,10 @@ import aboutus_image from "../../public/aboutus_image.png";
 import Link from "next/link";
 
 export const HomeAbout: React.FC = () => (
-    <div id="about" className="pb-20 md:py-28 bg-[url('/home_about_bg.png')] bg-black bg-cover relative">
+    <div
+        id="about"
+        className="pb-20 md:py-28 bg-[url('/home_about_bg.png')] bg-black bg-cover relative"
+    >
         {/*//! Side Shape */}
         <div className="absolute bottom-0 right-0">
             <Image src={aboutus_image} alt="Random Shape" />
@@ -35,7 +38,7 @@ export const HomeAbout: React.FC = () => (
                     bout Us
                 </h1>
 
-                <p className="font-ps font-normal text-lg break-all">
+                <p className="font-ps font-normal text-lg">
                     INADS Established in 2019 as a Media & Advertising Company in Qatar. A complete
                     solutions provider for their advertisers with multiple efficiencies.including
                     strategic planning, buying clout, social media muscle, content development,

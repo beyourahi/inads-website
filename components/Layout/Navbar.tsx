@@ -34,11 +34,11 @@ export const Navbar: React.FC = () => {
             </ul>
 
             {/*//! Social Icons */}
-            <div className="hidden xl:flex space-x-6 text-xl">
+            <div className="hidden xl:flex space-x-8 text-xl">
                 {social_icons.map(icon => (
                     <span
                         key={icon.name}
-                        className="hover:text-primary hover:scale-110 transition-all ease-in"
+                        className="hover:text-primary hover:scale-[1.3] transition-all ease-in"
                     >
                         <a href={icon.url} target="_blank" rel="noreferrer">
                             {icon.icon}
