@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { meta_info } from "../../data";
+import { meta_info } from "data";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { Newsletter } from "./Newsletter";

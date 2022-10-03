@@ -1,10 +1,5 @@
 import { Ticker } from "./Ticker.jsx";
-
-const counters = [
-    { num: 787, text: "IMPRESSIONS/MONTH" },
-    { num: 1628, text: "HOURS OF CONTENT PLAYED" },
-    { num: 2415, text: "SQ MI OF COVERAGE" },
-];
+import { counters } from "data";
 
 export const HomeCounter: React.FC = () => (
     <div className="bg-[url('/home_counter_bg.png')] bg-black bg-cover py-20 md:py-28">

@@ -1,21 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { BiMenuAltRight } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import { nav_links } from "data";
+import { social_icons } from "data";
 import logo from "../../public/logo.png";
 import { useState } from "react";
-
-const social_icons = [
-    { name: "Facebook", url: "https://www.facebook.com", icon: <FaFacebookF /> },
-    { name: "LinkedIn", url: "https://www.linkedin.com", icon: <FaLinkedinIn /> },
-    { name: "Twitter", url: "https://www.twitter.com", icon: <FaTwitter /> },
-    { name: "Instagram", url: "https://www.instagram.com", icon: <FaInstagram /> },
-];
 
 export const Navbar: React.FC = () => {
     const [nav, setNav] = useState(true);
@@ -92,20 +82,6 @@ export const Navbar: React.FC = () => {
                         ))}
                     </ul>
                 </div>
-
-                {/*//! Social Icons */}
-                {/* <div className="flex space-x-8 text-xl">
-                    {social_icons.map(icon => (
-                        <span
-                            key={icon.name}
-                            className="hover:text-primary hover:scale-110 transition-all ease-in"
-                        >
-                            <a href={icon.url} target="_blank" rel="noreferrer">
-                                {icon.icon}
-                            </a>
-                        </span>
-                    ))}
-                </div> */}
             </div>
         </nav>
     );

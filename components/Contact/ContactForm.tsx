@@ -1,5 +1,6 @@
 import Image from "next/image";
 import map from "../../public/map.png";
+import { form_inputs } from "data";
 
 export const ContactForm: React.FC = () => (
     <div className="bg-[url('/contact_bg.png')] bg-black bg-cover relative py-20 xl:py-28">
@@ -17,34 +18,15 @@ export const ContactForm: React.FC = () => (
             <div className="flex flex-col xl:flex-row items-center space-y-20 xl:space-y-0 xl:space-x-28">
                 <div className="w-full xl:w-[50%]">
                     <form className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-5 gap-5">
-                        <input
-                            type="text"
-                            name="full-name"
-                            placeholder="Full Name"
-                            className="px-4 py-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
-                        />
-
-                        <input
-                            type="text"
-                            name="subject"
-                            placeholder="Subject"
-                            className="p-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
-                        />
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            className="p-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
-                        />
-
-                        <input
-                            type="tel"
-                            name="phone"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            placeholder="Phone"
-                            className="p-4 bg-[#1F1F1F] font-ps font-normal text-white text-base md:text-lg border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
-                        />
+                        {form_inputs.map((item, index) => (
+                            <input
+                                key={index}
+                                type={item.type}
+                                name={item.name}
+                                placeholder={item.placeholder}
+                                className={item.className}
+                            />
+                        ))}
 
                         <textarea
                             name="comments"

@@ -1,17 +1,7 @@
 import Image from "next/image";
 import walking from "../../public/walking.png";
 import divider from "../../public/divider.png";
-
-const steps = [
-    { num: 1, text: "Design study to measure campaign goals" },
-    { num: 2, text: "Activate campaign" },
-    { num: 3, text: "Segment exposed (test) and unexposed (control)" },
-    { num: 4, text: "Survey brand lift questions or Measure Conversions" },
-    {
-        num: 5,
-        text: "Assess Lift as a result of INADS campaign + audience analytics and demographics",
-    },
-];
+import { analysis_steps } from "data";
 
 export const MeasurementAnalysis: React.FC = () => (
     <section className="bg-[#0C0D0E] py-20 xl:py-28">
@@ -38,7 +28,7 @@ export const MeasurementAnalysis: React.FC = () => (
                 </div>
 
                 <div className="xl:w-[60%] space-y-8">
-                    {steps.map((step, index) => (
+                    {analysis_steps.map((step, index) => (
                         <div key={index} className="flex items-center space-x-8">
                             <h1 className="text-primary text-xl xl:text-3xl font-np font-medium">
                                 Step {step.num}
