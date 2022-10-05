@@ -4,9 +4,9 @@ import { form_inputs } from "data";
 
 export const ContactForm: React.FC = () => (
     <div className="bg-[url('/contact_bg.png')] bg-black bg-cover relative py-20 xl:py-28">
-        <div className="container mx-auto px-6 xl:px-14 flex flex-col space-y-24">
+        <div className="container mx-auto px-5 flex flex-col space-y-24">
             {/*//! Heading */}
-            <h1 className="text-[2.5rem] leading-none xl:text-6xl font-np font-bold text-center">
+            <h1 className="text-4xl leading-none xl:text-6xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t
@@ -32,12 +32,12 @@ export const ContactForm: React.FC = () => (
                             name="comments"
                             rows={5}
                             placeholder="Write a comment"
-                            className="col-span-2 row-span-3 resize-none font-ps font-normal p-4 bg-[#1F1F1F] text-white text-base md:text-lg  border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in"
+                            className="col-span-2 row-span-3 resize-none font-ps font-normal p-4 bg-[#1F1F1F] text-white text-base md:text-lg  border-none outline-none focus:outline-primary focus:outline-offset-0 focus:outline-1 transition-all ease-in rounded-lg"
                         />
 
                         <button
                             type="submit"
-                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-inter font-bold text-lg text-center tracking-wider transition-all ease-in"
+                            className="bg-primary hover:bg-secondary col-span-2 px-9 py-4 font-inter font-bold text-lg text-center tracking-wider transition-all ease-in rounded-lg"
                         >
                             Submit
                         </button>

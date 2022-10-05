@@ -3,7 +3,7 @@ import specs from "../../public/specs.png";
 
 export const AboutVision: React.FC = () => (
     <div className="flex flex-col xl:flex-row bg-[#0C0D0E]">
-        <div className="px-8 xl:px-0">
+        <div className="px-5 xl:px-0">
             <Image src={specs} alt="Specs Image" className="object-cover z-20" />
         </div>
         <div className="space-y-16 p-8 xl:p-28 xl:w-[55%]">

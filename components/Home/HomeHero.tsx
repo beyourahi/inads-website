@@ -10,7 +10,7 @@ export const HomeHero: React.FC = () => (
         </video>
 
         {/*//// Masthead */}
-        <div className="relative container mx-auto px-8 xl:px-36">
+        <div className="relative container mx-auto px-5 xl:px-36">
             {/*//? Hollow texts */}
             <div className="hidden md:flex flex-col items-start justify-center absolute -top-[15%] md:-top-[10g%] xl:-top-20 left-0 md:-left-[5%] lg:left-0 font-np font-black text-[3.5rem] md:text-7xl lg:text-[5rem] xl:text-9xl z-20 ml-7">
                 <h1

@@ -15,9 +15,9 @@ import events from "../../public/events.png";
 
 export const ServicesList = () => (
     <div className="bg-black py-20 xl:py-28">
-        <div className="container mx-auto px-8 xl:px-28 flex flex-col space-y-32">
+        <div className="container mx-auto px-5 xl:px-28 flex flex-col space-y-32">
             {/*//! Heading  */}
-            <h1 className="text-5xl xl:text-6xl text-center xl:text-left font-np font-bold">
+            <h1 className="text-4xl text-center xl:text-left font-np font-bold">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     O
                 </span>

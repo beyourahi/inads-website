@@ -13,7 +13,7 @@ export const Newsletter: React.FC = () => (
         </div>
 
         {/*//! Form Box */}
-        <div className="container mx-auto lg:px-[4.5rem] 2xl:px-36 flex justify-between">
+        <div className="container mx-auto lg:px-16 2xl:px-36">
             <div className="bg-[url('/newsletter_BG.png')] bg-cover flex flex-col 2xl:flex-row justify-between items-center space-y-8 py-20 2xl:px-16 w-full">
                 {/*//// Heading */}
                 <div>
@@ -23,18 +23,18 @@ export const Newsletter: React.FC = () => (
                 </div>
 
                 {/*//// Form */}
-                <form className="2xl:space-x-4 2xl:w-[55%] w-full flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 justify-between px-8 sm:px-28 md:px-32 lg:px-44 xl:px-80 2xl:px-0">
+                <form className="2xl:space-x-4 2xl:w-[55%] w-full flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 justify-between px-7 sm:px-28 md:px-32 lg:px-44 xl:px-80 2xl:px-0">
                     <input
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Email"
-                        className="w-full py-4 px-6 text-black font-ps font-normal text-lg rounded-md border-2 border-white border-solid outline-none focus:outline-primary focus:outline-offset-0 focus:outline-[3px] transition-all ease-in"
+                        className="w-full py-4 px-6 text-black font-ps font-normal text-lg rounded-lg border-2 border-white border-solid outline-none focus:outline-primary focus:outline-offset-0 focus:outline-[3px] transition-all ease-in"
                     />
 
                     <button
                         type="submit"
-                        className="bg-primary hover:bg-secondary font-ps font-bold transition-all ease-in px-12 py-4 rounded-md text-xl"
+                        className="bg-primary hover:bg-secondary font-ps font-bold transition-all ease-in px-12 py-4 rounded-lg text-xl"
                     >
                         <span>Subscribe</span>
                     </button>

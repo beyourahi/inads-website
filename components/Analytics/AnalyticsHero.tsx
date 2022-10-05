@@ -6,11 +6,11 @@ export const AnalyticsHero: React.FC = () => (
                 "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url('/blockchain.png')",
         }}
     >
-        <div className="container mx-auto px-4 xl:px-36 flex justify-between items-center">
+        <div className="container mx-auto px-5 flex justify-center items-center">
             <div className="space-y-3 font-np">
                 <h1 className="text-primary text-5xl xl:text-8xl font-black">MEASURABLE</h1>
-                <h2 className="text-3xl xl:text-5xl">OUTDOOR</h2>
-                <h2 className="text-3xl xl:text-5xl">
+                <h2 className="text-2xl xl:text-5xl">OUTDOOR</h2>
+                <h2 className="text-2xl xl:text-5xl">
                     <span className="underline underline-offset-[40px] decoration-primary">AD</span>
                     VERTISING
                 </h2>

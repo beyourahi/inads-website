@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { image_gallery } from "data";
 import features_image from "../../public/features_image.png";
+import Link from "next/link";
 
 export const HomeFeatures: React.FC = () => (
     <div className="bg-black py-20 md:py-28 relative">
@@ -19,9 +20,9 @@ export const HomeFeatures: React.FC = () => (
             </h1>
         </div>
 
-        <div className="container mx-auto px-8 lg:px-28 xl:px-36 flex flex-col space-y-20">
+        <div className="container mx-auto px-5 lg:px-28 xl:px-36 flex flex-col space-y-20">
             {/*//! Heading  */}
-            <h1 className="text-5xl md:text-6xl font-np font-bold">
+            <h1 className="text-4xl md:text-6xl font-np font-bold text-center xl:text-left">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     O
                 </span>
@@ -34,7 +35,7 @@ export const HomeFeatures: React.FC = () => (
                     {image_gallery.map((image, index) => (
                         <div key={index} className="group relative flex justify-center">
                             <Image src={image.src} alt="Feature Image" objectFit="cover" />
-                            <div className="group-hover:opacity-100 group-hover:bottom-0 absolute opacity-0 -bottom-96 h-[65%] w-[85%] flex justify-center items-center bg-secondary bg-opacity-75 transition-all ease-in-out duration-[400ms]">
+                            <div className="group-hover:opacity-100 absolute opacity-0 bottom-0 h-[65%] w-[85%] flex justify-center items-center bg-secondary bg-opacity-75 transition-all ease-in-out duration-[400ms]">
                                 <h1 className="text-3xl font-bold font-np text-center">
                                     {image.text}
                                 </h1>
@@ -44,9 +45,11 @@ export const HomeFeatures: React.FC = () => (
                 </div>
 
                 {/*//! Button */}
-                <a className="bg-primary hover:bg-secondary font-inter font-bold cursor-pointer px-7 py-3.5 md:px-10 md:py-4 text-base md:text-lg transition-all ease-in">
+                <Link href="/services">
+                <span className="bg-primary hover:bg-secondary font-inter font-bold cursor-pointer px-7 py-3.5 md:px-10 md:py-4 text-base md:text-lg transition-all ease-in rounded-lg">
                     See More
-                </a>
+                </span>
+                </Link>
             </div>
         </div>
     </div>

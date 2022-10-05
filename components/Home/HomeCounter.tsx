@@ -3,7 +3,7 @@ import { counters } from "data";
 
 export const HomeCounter: React.FC = () => (
     <div className="bg-[url('/home_counter_bg.png')] bg-black bg-cover py-20 md:py-28">
-        <div className="container mx-auto px-6 xl:px-36 flex flex-col lg:flex-row items-center justify-center divide-y lg:divide-y-0 lg:divide-x-2 divide-primary">
+        <div className="container mx-auto xl:px-36 flex flex-col lg:flex-row items-center justify-center divide-y lg:divide-y-0 lg:divide-x-2 divide-primary">
             {counters.map((counter, index) => (
                 <div
                     key={index}

@@ -1,12 +1,11 @@
-
 import Image from "next/image";
 import { contact_boxes } from "data";
 
 export const ContactInfo: React.FC = () => (
     <div className="bg-black py-20 xl:py-28">
-        <div className="container mx-auto px-8 xl:px-36 flex flex-col space-y-20">
+        <div className="container mx-auto px-5 flex flex-col space-y-20">
             {/*//! Heading  */}
-            <h1 className="text-5xl xl:text-6xl font-np font-bold">
+            <h1 className="text-4xl font-np font-bold text-center">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     C
                 </span>

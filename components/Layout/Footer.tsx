@@ -12,7 +12,7 @@ const { PO, state, email, telephone } = footer;
 
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white">
-        <div className="container mx-auto px-8 lg:px-24 xl:px-36 divide-y-[1px] divide-white/30">
+        <div className="container mx-auto px-7 lg:px-24 xl:px-36 divide-y-[1px] divide-white/30">
             {/*//! Top */}
             <div className="flex flex-col justify-between space-y-16 py-14 md:flex-row md:space-y-0 lg:py-24">
                 {/*//// Logo */}
@@ -79,25 +79,29 @@ export const Footer: React.FC = () => (
                                 {telephone}
                             </span>
                         </div>
+                    </div>
+                </div>
+                {/*//// Mobile viewc Social Icons */}
+                <div className="block md:hidden space-y-6">
+                    <h1 className="text-xl md:text-lg lg:text-xl font-np font-medium">FOLLOW US</h1>
 
-                        <div className="flex md:hidden space-x-8 text-xl">
-                            {social_icons.map(icon => (
-                                <span
-                                    key={icon.name}
-                                    className="hover:text-primary hover:scale-110 transition-all ease-in"
-                                >
-                                    <a href={icon.url} target="_blank" rel="noreferrer">
-                                        {icon.icon}
-                                    </a>
-                                </span>
-                            ))}
-                        </div>
+                    <div className="flex md:hidden space-x-8 text-xl">
+                        {social_icons.map(icon => (
+                            <span
+                                key={icon.name}
+                                className="hover:text-primary hover:scale-110 transition-all ease-in"
+                            >
+                                <a href={icon.url} target="_blank" rel="noreferrer">
+                                    {icon.icon}
+                                </a>
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>
 
             {/*//! Bottom */}
-            <div className="flex flex-col justify-between py-8 items-center md:flex-row md:space-y-0">
+            <div className="flex flex-col justify-between py-6 items-center md:flex-row md:space-y-0">
                 <div>
                     <span className="text-base font-mont font-medium">
                         &copy; {new Date().getFullYear()} Inads. All rights reserved

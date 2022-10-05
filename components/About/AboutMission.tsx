@@ -17,7 +17,7 @@ export const AboutMission: React.FC = () => (
                 a large range of potential customers all over Qatar.
             </p>
         </div>
-        <div className="px-8 xl:px-0">
+        <div className="px-5 xl:px-0">
             <Image src={dart} alt="Dart Image" className="object-cover z-20" />
         </div>
     </div>
