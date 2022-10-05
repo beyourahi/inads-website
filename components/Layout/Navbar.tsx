@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
     const handleNav = () => setNav(!nav);
 
     return (
-        <nav className="flex justify-between items-center p-5 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50 md:p-12 lg:px-24">
+        <nav className="flex justify-between items-center p-5 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50 md:p-12 lg:px-24 2xl:px-36">
             {/*//! Brand */}
             <Link href="/">
                 <div className="cursor-pointer w-[30%] md:w-auto">

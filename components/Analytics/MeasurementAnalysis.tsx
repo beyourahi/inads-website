@@ -47,7 +47,7 @@ export const MeasurementAnalysis: React.FC = () => (
                 </div>
 
                 <div className="hidden lg:flex w-[40%] relative justify-end">
-                    <div className="block absolute bg-secondary w-72 h-[30rem] top-12 -right-8 xl:-top-5 xl:-right-5 z-10"></div>
+                    <div className="block absolute bg-secondary w-72 h-[30rem] top-12 -right-8 xl:top-[1%] xl:-right-5 2xl:-top-[3%] 2xl:h-[40rem] z-10"></div>
                     <Image src={walking} alt="Service Image" className="object-contain z-20" />
                 </div>
             </div>

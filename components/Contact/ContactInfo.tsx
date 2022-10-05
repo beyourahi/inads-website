@@ -24,7 +24,7 @@ export const ContactInfo: React.FC = () => (
                             <h1 className="text-xl md:text-2xl lg:text-3xl font-np font-semibold">
                                 {item.type}
                             </h1>
-                            <h2 className="text-base md:text-lg lg:text-xl font-ps font-normal">{item.info}</h2>
+                            <h2 className="text-base md:text-lg font-ps font-normal">{item.info}</h2>
                         </div>
                     </div>
                 ))}

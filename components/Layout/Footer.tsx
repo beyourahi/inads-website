@@ -12,7 +12,7 @@ const { PO, state, email, telephone } = footer;
 
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white">
-        <div className="container mx-auto px-7 divide-y-[1px] divide-white/30 md:px-12 lg:px-24">
+        <div className="container mx-auto px-7 divide-y-[1px] divide-white/30 md:px-12 lg:px-24 xl:px-36">
             {/*//! Top */}
             <div className="flex flex-col justify-between space-y-16 py-14 md:flex-row md:space-y-0 lg:py-24">
                 {/*//// Logo */}
@@ -64,6 +64,8 @@ export const Footer: React.FC = () => (
 
                             <a
                                 href="mailto:info@inadsgroup.com"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="text-lg md:text-base lg:text-lg font-ps font-normal"
                             >
                                 {email}
@@ -75,9 +77,14 @@ export const Footer: React.FC = () => (
                                 alt="WhatsApp"
                                 className="object-contain text-primary"
                             />
-                            <span className="text-lg md:text-base lg:text-lg font-ps font-normal">
+                            <a
+                                href="https://wa.me/97450050602"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-lg md:text-base lg:text-lg font-ps font-normal"
+                            >
                                 {telephone}
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +108,7 @@ export const Footer: React.FC = () => (
             </div>
 
             {/*//! Bottom */}
-            <div className="flex justify-center items-center py-6 md:flex-row md:justify-between">
+            <div className="flex justify-center items-center py-6 md:py-8 xl:py-10 md:flex-row md:justify-between">
                 <h4 className="text-base font-mont font-medium">
                     &copy; {new Date().getFullYear()} Inads. All rights reserved
                 </h4>

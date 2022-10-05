@@ -6,7 +6,7 @@ export const ContactHero: React.FC = () => (
                 "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('contact_hero_bg.png')",
         }}
     >
-        <div className="container mx-auto px-5 flex justify-center items-center md:px-12 lg:px-24 md:justify-between">
+        <div className="container mx-auto px-5 flex justify-center items-center md:px-12 lg:px-24 xl:px-36 md:justify-between">
             <div className="space-y-3 font-np">
                 <h1 className="text-primary text-5xl lg:text-6xl font-black">NO CHANCE</h1>
                 <h2 className="text-2xl lg:text-3xl">

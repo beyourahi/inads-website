@@ -6,7 +6,7 @@ export const AnalyticsHero: React.FC = () => (
                 "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url('/blockchain.png')",
         }}
     >
-        <div className="container mx-auto flex justify-center items-center px-5 md:px-12 lg:px-24 md:justify-between">
+        <div className="container mx-auto flex justify-center items-center px-5 md:px-12 lg:px-24 xl:px-36 md:justify-between">
             <div className="space-y-3 font-np">
                 <h1 className="text-primary text-4xl md:text-5xl lg:text-6xl font-black">
                     MEASURABLE

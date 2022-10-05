@@ -107,5 +107,5 @@ export const footer = {
     PO: "PO: 2255",
     state: "Doha-Qatar",
     email: "info@inadsgroup.com",
-    telephone: "0097450050602",
+    telephone: "97450050602",
 };

@@ -32,8 +32,8 @@ export const AboutUs: React.FC = () => (
                         </span>
                         HO&apos;S INADS
                     </h1>
-                    <p className="text-base md:text-2xl font-ps font-normal text-center xl:text-left">
-                        INADS group Established in 2019 as a Media & Advertising Company in Qatar. A
+                    <p className="text-base md:text-xl font-ps font-normal text-center xl:text-left">
+                    INADS established in 2019 as a Media & Advertising company in Qatar. A
                         complete solutions provider for their advertisers with multiple eﬃciencies,
                         including strategic planning, buying clout, social media muscle, content
                         development, mobile media versatility and more planning process to gain a
@@ -47,7 +47,7 @@ export const AboutUs: React.FC = () => (
             {/*//// Bottom */}
             <div className="flex flex-col-reverse xl:flex-row bg-black items-center xl:space-x-20">
                 <div className="space-y-16 xl:w-[50%]">
-                    <p className="text-base md:text-2xl font-ps font-normal text-center xl:text-left">
+                    <p className="text-base md:text-xl font-ps font-normal text-center xl:text-left">
                         We use experts in research to understand how a client&apos;s target
                         consumers think, feel and act about certain things in certain situations
                         then will use these consumer insights to develop a strategic media
@@ -72,7 +72,7 @@ export const AboutUs: React.FC = () => (
                         height={483}
                         className="object-cover z-20"
                     />
-                    <div className="hidden xl:block absolute bg-secondary w-72 h-[530px] -top-6 -right-1 z-10"></div>
+                    <div className="hidden xl:block absolute bg-secondary w-72 h-[26rem] -top-7 -right-7 z-10"></div>
                 </div>
             </div>
         </div>

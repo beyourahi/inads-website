@@ -12,9 +12,9 @@ export const HomeContact: React.FC = () => (
             <Image src={contact_shape2} alt="Random Shape" />
         </div>
 
-        <div className="container mx-auto px-5 md:px-12 lg:px-24 flex flex-col space-y-20">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24 xl:px-36 flex flex-col space-y-20">
             {/*//! Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-np font-bold text-center">
+            <h1 className="text-4xl md:text-6xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t
@@ -23,8 +23,8 @@ export const HomeContact: React.FC = () => (
             </h1>
 
             {/*//! Form */}
-            <div className="flex items-center space-x-28 z-20">
-                <div className="w-full xl:w-[50%]">
+            <div className="flex items-center space-x-20 2xl:space-x-28 z-20">
+                <div className="w-full xl:w-[60%] 2xl:w-[50%]">
                     <form className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-5 gap-5">
                         {form_inputs.map((item, index) => (
                             <input
@@ -52,7 +52,7 @@ export const HomeContact: React.FC = () => (
                     </form>{" "}
                 </div>
 
-                <div className="hidden xl:flex items-end justify-evenly xl:w-[50%]">
+                <div className="hidden xl:flex items-end justify-evenly xl:w-[40%] 2xl:w-[50%]">
                     <Image src={contact_image1} alt="Contact Image" className="object-contain" />
                     <Image src={contact_image2} alt="Contact Image" className="object-contain" />
                 </div>
