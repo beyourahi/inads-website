@@ -12,7 +12,7 @@ const { PO, state, email, telephone } = footer;
 
 export const Footer: React.FC = () => (
     <footer className="bg-black text-white">
-        <div className="container mx-auto px-7 lg:px-24 xl:px-36 divide-y-[1px] divide-white/30">
+        <div className="container mx-auto px-7 divide-y-[1px] divide-white/30 md:px-12 lg:px-24">
             {/*//! Top */}
             <div className="flex flex-col justify-between space-y-16 py-14 md:flex-row md:space-y-0 lg:py-24">
                 {/*//// Logo */}
@@ -101,12 +101,10 @@ export const Footer: React.FC = () => (
             </div>
 
             {/*//! Bottom */}
-            <div className="flex flex-col justify-between py-6 items-center md:flex-row md:space-y-0">
-                <div>
-                    <span className="text-base font-mont font-medium">
-                        &copy; {new Date().getFullYear()} Inads. All rights reserved
-                    </span>
-                </div>
+            <div className="flex justify-center items-center py-6 md:flex-row md:justify-between">
+                <h4 className="text-base font-mont font-medium">
+                    &copy; {new Date().getFullYear()} Inads. All rights reserved
+                </h4>
 
                 <div className="hidden md:flex space-x-8 text-xl">
                     {social_icons.map(icon => (

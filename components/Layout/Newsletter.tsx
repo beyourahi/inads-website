@@ -13,17 +13,17 @@ export const Newsletter: React.FC = () => (
         </div>
 
         {/*//! Form Box */}
-        <div className="container mx-auto lg:px-16 2xl:px-36">
-            <div className="bg-[url('/newsletter_BG.png')] bg-cover flex flex-col 2xl:flex-row justify-between items-center space-y-8 py-20 2xl:px-16 w-full">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24">
+            <div className="bg-[url('/newsletter_BG.png')] bg-cover flex flex-col 2xl:flex-row justify-between items-center space-y-8 py-20 w-full">
                 {/*//// Heading */}
                 <div>
-                    <h1 className="text-4xl lg:text-[2.5rem] xl:text-5xl text-center 2xl:text-left font-np font-bold leading-tight">
+                    <h1 className="text-4xl text-center font-np font-bold leading-tight lg:text-5xl 2xl:text-left">
                         Subscribe to our Newsletter
                     </h1>
                 </div>
 
                 {/*//// Form */}
-                <form className="2xl:space-x-4 2xl:w-[55%] w-full flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 justify-between px-7 sm:px-28 md:px-32 lg:px-44 xl:px-80 2xl:px-0">
+                <form className="w-full flex flex-col space-y-4 justify-between px-7 sm:px-28 md:px-32 lg:px-44 xl:px-80 2xl:space-y-0 2xl:flex-row 2xl:px-0 2xl:space-x-4 2xl:w-[55%]">
                     <input
                         type="email"
                         name="email"

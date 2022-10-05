@@ -12,9 +12,9 @@ export const HomeContact: React.FC = () => (
             <Image src={contact_shape2} alt="Random Shape" />
         </div>
 
-        <div className="container mx-auto px-5 flex flex-col space-y-20">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24 flex flex-col space-y-20">
             {/*//! Heading */}
-            <h1 className="text-4xl md:text-6xl font-np font-bold text-center">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t

@@ -12,7 +12,7 @@ export const AboutUs: React.FC = () => (
             </h1>
         </div>
 
-        <div className="container mx-auto px-5 xl:px-16 py-20 xl:py-28 space-y-12 xl:space-y-24">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24 py-20 xl:py-28 space-y-12 xl:space-y-24">
             {/*//// Top */}
             <div className="flex flex-col xl:flex-row items-center space-y-12 xl:space-y-0 xl:space-x-20 bg-black">
                 <div className="xl:w-[50%] relative z-20">
@@ -26,13 +26,13 @@ export const AboutUs: React.FC = () => (
                     <div className="hidden xl:block absolute bg-secondary w-72 h-72 -top-5 -left-6 z-10"></div>
                 </div>
                 <div className="space-y-16 xl:w-[50%]">
-                    <h1 className="text-4xl xl:text-6xl font-np font-bold text-center xl:text-left">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-np font-bold text-center xl:text-left">
                         <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                             W
                         </span>
                         HO&apos;S INADS
                     </h1>
-                    <p className="text-lg xl:text-xl font-ps font-normal text-center xl:text-left">
+                    <p className="text-base md:text-2xl font-ps font-normal text-center xl:text-left">
                         INADS group Established in 2019 as a Media & Advertising Company in Qatar. A
                         complete solutions provider for their advertisers with multiple eﬃciencies,
                         including strategic planning, buying clout, social media muscle, content
@@ -47,7 +47,7 @@ export const AboutUs: React.FC = () => (
             {/*//// Bottom */}
             <div className="flex flex-col-reverse xl:flex-row bg-black items-center xl:space-x-20">
                 <div className="space-y-16 xl:w-[50%]">
-                    <p className="text-lg xl:text-xl font-ps font-normal text-center xl:text-left">
+                    <p className="text-base md:text-2xl font-ps font-normal text-center xl:text-left">
                         We use experts in research to understand how a client&apos;s target
                         consumers think, feel and act about certain things in certain situations
                         then will use these consumer insights to develop a strategic media

@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
     const handleNav = () => setNav(!nav);
 
     return (
-        <nav className="flex justify-between items-center py-6 5 xl:py-10 px-8 xl:px-32 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50">
+        <nav className="flex justify-between items-center p-5 backdrop-blur-lg bg-transparent fixed top-0 right-0 left-0 z-50 md:p-12 lg:px-24">
             {/*//! Brand */}
             <Link href="/">
                 <div className="cursor-pointer w-[30%] md:w-auto">
@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
             <div
                 className={
                     !nav
-                        ? "fixed top-0 left-0 w-[100%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-8"
+                        ? "fixed top-0 left-0 w-[100%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-8 md:p-16 lg:px-32"
                         : "fixed top-0 left-[-100%] h-screen ease-out duration-1000"
                 }
             >
@@ -75,7 +75,7 @@ export const Navbar: React.FC = () => {
                     <ul className="divide-y-[1px] divide-white/30">
                         {nav_links.map(link => (
                             <Link key={link.name} href={link.url}>
-                                <li className="hover:text-primary cursor-pointer font-np font-medium transition-all ease-in text-lg py-6">
+                                <li className="hover:text-primary cursor-pointer font-np font-medium transition-all ease-in text-base md:text-lg lg:text-2xl py-6 md:py-10">
                                     {link.name}
                                 </li>
                             </Link>

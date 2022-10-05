@@ -4,9 +4,9 @@ import { form_inputs } from "data";
 
 export const ContactForm: React.FC = () => (
     <div className="bg-[url('/contact_bg.png')] bg-black bg-cover relative py-20 xl:py-28">
-        <div className="container mx-auto px-5 flex flex-col space-y-24">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24 flex flex-col space-y-24">
             {/*//! Heading */}
-            <h1 className="text-4xl leading-none xl:text-6xl font-np font-bold text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl leading-none xl:text-6xl font-np font-bold text-center">
                 Contac
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     t

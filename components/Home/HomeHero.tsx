@@ -10,9 +10,9 @@ export const HomeHero: React.FC = () => (
         </video>
 
         {/*//// Masthead */}
-        <div className="relative container mx-auto px-5 xl:px-36">
+        <div className="relative container mx-auto px-5 md:px-12 lg:px-24">
             {/*//? Hollow texts */}
-            <div className="hidden md:flex flex-col items-start justify-center absolute -top-[15%] md:-top-[10g%] xl:-top-20 left-0 md:-left-[5%] lg:left-0 font-np font-black text-[3.5rem] md:text-7xl lg:text-[5rem] xl:text-9xl z-20 ml-7">
+            <div className="hidden md:flex flex-col items-start justify-center absolute -top-[15%] md:-top-[10%] lg:-top-20 left-0 md:-left-[5%] lg:left-0 font-np font-black text-[3.5rem] md:text-7xl lg:text-8xl xl:text-9xl z-20 ml-7">
                 <h1
                     className="text-transparent opacity-[0.15] tracking-widest mb-2 xl:mb-8"
                     style={{ WebkitTextStroke: "1px white" }}
@@ -34,16 +34,16 @@ export const HomeHero: React.FC = () => (
             </div>
 
             {/*//? CTA */}
-            <div className="space-y-8">
-                <h1 className="text-5xl md:text-7xl lg:text-[5rem] xl:text-8xl font-black font-np">
+            <div className="space-y-8 md:space-y-10 lg:space-y-16">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-np">
                     We {""}
-                    <span className="text-primary">Believe In{" "}</span>
+                    <span className="text-primary">Believe In </span>
                     Impressions {""}
-                    <span className="text-primary ">That{" "}</span>
+                    <span className="text-primary ">That </span>
                     Lasts
                 </h1>
 
-                <h2 className="text-lg md:text-2xl font-ps w-full lg:w-[65%]">
+                <h2 className="text-lg md:text-2xl lg:text-3xl font-ps w-[80%]">
                     Innovation, quality, customer service and reliability are the foundations of our
                     business
                 </h2>

@@ -20,9 +20,9 @@ export const HomeFeatures: React.FC = () => (
             </h1>
         </div>
 
-        <div className="container mx-auto px-5 lg:px-28 xl:px-36 flex flex-col space-y-20">
+        <div className="container mx-auto px-5 md:px-12 lg:px-24 xl:px-36 flex flex-col space-y-20">
             {/*//! Heading  */}
-            <h1 className="text-4xl md:text-6xl font-np font-bold text-center xl:text-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-np font-bold text-center xl:text-left">
                 <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                     O
                 </span>
@@ -46,9 +46,9 @@ export const HomeFeatures: React.FC = () => (
 
                 {/*//! Button */}
                 <Link href="/services">
-                <span className="bg-primary hover:bg-secondary font-inter font-bold cursor-pointer px-7 py-3.5 md:px-10 md:py-4 text-base md:text-lg transition-all ease-in rounded-lg">
-                    See More
-                </span>
+                    <span className="bg-primary hover:bg-secondary font-inter font-bold cursor-pointer px-7 py-3.5 md:px-10 md:py-4 text-base md:text-lg transition-all ease-in rounded-lg">
+                        See More
+                    </span>
                 </Link>
             </div>
         </div>
