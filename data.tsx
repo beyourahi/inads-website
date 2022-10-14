@@ -10,7 +10,7 @@ import IG2 from "./public/IG2.png";
 import IG3 from "./public/IG3.png";
 import IG4 from "./public/IG4.png";
 import IG5 from "./public/IG5.png";
-import IG6 from "./public/IG6.png";
+import IG6 from "./public/IG6.jpg";
 import IG7 from "./public/IG7.png";
 import IG8 from "./public/IG8.png";
 

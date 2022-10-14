@@ -187,7 +187,7 @@ export const ServicesList = () => (
                 {/*//// Service 8 */}
                 <div className="flex flex-col xl:flex-row xl:space-x-28 items-center justify-center">
                     <div className="xl:w-1/2 relative mb-10 xl:mb-0">
-                        <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
+                        <div className="hidden xl:block absolute bg-secondary w-[28rem] h-[45rem] -top-5 -left-5 z-10"></div>
                         <Image src={blogging} alt="Service Image" className="object-contain z-20" />
                     </div>
                     <div className="space-y-10 xl:w-1/2">
