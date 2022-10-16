@@ -15,7 +15,7 @@ import IG7 from "./public/IG7.png";
 import IG8 from "./public/IG8.png";
 
 export const meta_info = {
-    brand: "Inads",
+    brand: "INADS",
     description: "Official website of Inads",
 };
 

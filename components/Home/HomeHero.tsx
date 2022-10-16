@@ -19,7 +19,7 @@ const swoosh: Variants = {
 
 export const HomeHero: React.FC = () => (
     <div className="h-full flex justify-start items-center relative">
-        {/*//// Background Video */}
+        {/*//! Background Video */}
         <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover">
             <source src="/hero.mp4" type="video/mp4" />
         </video>

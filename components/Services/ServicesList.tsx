@@ -1,5 +1,5 @@
 import Image from "next/image";
-import IG1 from "../../public/IG1.png";
+import service_image_1 from "../../public/service_image_1.png";
 import IG2 from "../../public/IG2.png";
 import production from "../../public/production.png";
 import IG4 from "../../public/IG4.png";
@@ -12,6 +12,36 @@ import signage from "../../public/signage.png";
 import giftitems from "../../public/giftitems.jpg";
 import uniforms from "../../public/uniforms.jpg";
 import events from "../../public/events.png";
+import { motion, Variants } from "framer-motion";
+
+const swoosh: Variants = {
+    offscreenR: {
+        x: 300,
+        opacity: 0,
+    },
+    onscreenR: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.3,
+            duration: 1.5,
+        },
+    },
+    offscreenL: {
+        x: -300,
+        opacity: 0,
+    },
+    onscreenL: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.3,
+            duration: 1.5,
+        },
+    },
+};
 
 export const ServicesList = () => (
     <div className="bg-black py-20 xl:py-28">
@@ -28,7 +58,13 @@ export const ServicesList = () => (
             <section className="flex flex-col space-y-24">
                 {/*//// Service 1 */}
                 <div className="flex flex-col-reverse items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Media Planning & Strategy
                         </h1>
@@ -44,22 +80,40 @@ export const ServicesList = () => (
                             those media advertising opportunities at the best position and price for
                             the client{" "}
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -right-6 z-10 2xl:right-[2%]"></div>
-                        <Image src={IG1} alt="Service Image" className="object-cover z-20" />
-                    </div>
+                        <Image src={service_image_1} alt="Service Image" className="object-cover z-20" />
+                    </motion.div>
                 </div>
 
                 {/*//// Service 2 */}
                 <div className="flex flex-col xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
                         <Image src={IG2} alt="Service Image" className="object-contain z-20" />
-                    </div>
+                    </motion.div>
 
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary md:text-4xl text-3xl text-center xl:text-left font-np font-medium">
                             Creativity
                         </h1>
@@ -67,12 +121,18 @@ export const ServicesList = () => (
                             We are versed in concept knowledge, copywriting, and graphic design, as
                             well as brand engineering and studio work
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 3 */}
                 <div className="flex flex-col-reverse xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Production
                         </h1>
@@ -81,25 +141,44 @@ export const ServicesList = () => (
                             clear high deﬁnition prints & banners including digital printing, Oﬀset
                             Printing, Vehicle Branding, Heat Transfer Printing.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:right-[2%] z-10"></div>
                         <Image
                             src={production}
                             alt="Service Image"
                             className="object-contain z-20"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 4 */}
                 <div className="flex flex-col xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
                         <Image src={IG4} alt="Service Image" className="object-contain z-20" />
-                    </div>
-                    <div className="space-y-10 xl:w-1/2">
+                    </motion.div>
+
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Social Media
                         </h1>
@@ -114,12 +193,18 @@ export const ServicesList = () => (
                             Twitter to LinkedIn, Instagram and engage followers with meaningful;
                             marketing content/ promotions & contests /Monitoring & management.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 5 */}
                 <div className="flex flex-col-reverse xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Online Media
                         </h1>
@@ -133,24 +218,44 @@ export const ServicesList = () => (
                             (SEO) to help you cut through the digital clutter to reach your target
                             audience.
                         </p>
-                    </div>
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    </motion.div>
+
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:right-[11%] z-10"></div>
                         <Image
                             src={onlinemedia}
                             alt="Service Image"
                             className="object-contain z-20"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 6 */}
                 <div className="flex flex-col xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
                         <Image src={branding} alt="Service Image" className="object-contain z-20" />
-                    </div>
-                    <div className="space-y-10 xl:w-1/2">
+                    </motion.div>
+
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Branding
                         </h1>
@@ -161,12 +266,18 @@ export const ServicesList = () => (
                             etc... We show people who you are, what you do and how you&apos;re
                             diﬀerent from competitors.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 7 */}
                 <div className="flex flex-col-reverse xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Photography & Video Production
                         </h1>
@@ -177,20 +288,40 @@ export const ServicesList = () => (
                             increase engagement, build trust and provide value with and engaging the
                             attention of your online audience.
                         </p>
-                    </div>
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    </motion.div>
+
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:right-[2%] z-10"></div>
                         <Image src={photo} alt="Service Image" className="object-contain z-20" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 8 */}
                 <div className="flex flex-col xl:flex-row xl:space-x-28 items-center justify-center">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
-                        <div className="hidden xl:block absolute bg-secondary w-[28rem] h-[45rem] -top-5 -left-5 z-10"></div>
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
                         <Image src={blogging} alt="Service Image" className="object-contain z-20" />
-                    </div>
-                    <div className="space-y-10 xl:w-1/2">
+                    </motion.div>
+
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Blogging
                         </h1>
@@ -201,12 +332,18 @@ export const ServicesList = () => (
                             earning their trust and leading them deeper into your website where they
                             convert to be-come new customers.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 9 */}
                 <div className="flex flex-col-reverse items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Exhibitions Stands
                         </h1>
@@ -220,24 +357,44 @@ export const ServicesList = () => (
                             matches your brand image and marketing requirement along with complete
                             range of services so that you have a successful show.
                         </p>
-                    </div>
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    </motion.div>
+
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:right-[2%] z-10"></div>
                         <Image
                             src={exhibitions}
                             alt="Service Image"
                             className="object-contain z-20"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 10 */}
                 <div className="flex flex-col items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 -left-5 z-10"></div>
                         <Image src={signage} alt="Service Image" className="object-contain z-20" />
-                    </div>
-                    <div className="space-y-10 xl:w-1/2">
+                    </motion.div>
+
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Signage
                         </h1>
@@ -250,12 +407,18 @@ export const ServicesList = () => (
                             speciﬁc message to the general public with a vinyl banner over other
                             advertising products.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 11 */}
                 <div className="flex flex-col-reverse items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Gift Items
                         </h1>
@@ -267,24 +430,44 @@ export const ServicesList = () => (
                             includes jackets, sweaters, dress shirts, mugs, golf gifts, tech and
                             travel gifts and more.
                         </p>
-                    </div>
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    </motion.div>
+
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:-right-[5%] z-10"></div>
                         <Image
                             src={giftitems}
                             alt="Service Image"
                             className="object-contain z-20"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 12 */}
                 <div className="flex flex-col items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-80 -top-5 -left-5 z-10"></div>
                         <Image src={uniforms} alt="Service Image" className="object-contain z-20" />
-                    </div>
-                    <div className="space-y-10 xl:w-1/2">
+                    </motion.div>
+
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Uniforms
                         </h1>
@@ -296,12 +479,18 @@ export const ServicesList = () => (
                             standard uniform solutions, along with stewardess hats, pilot caps and a
                             range of uniform accessories.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/*//// Service 13 */}
                 <div className="flex flex-col-reverse items-center justify-center xl:flex-row xl:space-x-28">
-                    <div className="space-y-10 xl:w-1/2">
+                    <motion.div
+                        className="space-y-10 xl:w-1/2"
+                        variants={swoosh}
+                        initial="offscreenL"
+                        whileInView="onscreenL"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <h1 className="text-primary text-3xl md:text-4xl text-center xl:text-left font-np font-medium">
                             Events
                         </h1>
@@ -312,11 +501,18 @@ export const ServicesList = () => (
                             fashion shows, Ceremonies, celebrations,, by using the most modern and
                             best audiovisual technology.
                         </p>
-                    </div>
-                    <div className="xl:w-1/2 relative mb-10 xl:mb-0">
+                    </motion.div>
+
+                    <motion.div
+                        className="xl:w-1/2 relative mb-10 xl:mb-0"
+                        variants={swoosh}
+                        initial="offscreenR"
+                        whileInView="onscreenR"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <div className="hidden xl:block absolute bg-secondary w-96 h-72 -top-5 2xl:right-[2%] z-10"></div>
                         <Image src={events} alt="Service Image" className="object-contain z-20" />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </div>

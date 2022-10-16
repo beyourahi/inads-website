@@ -1,7 +1,37 @@
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+
+const swoosh: Variants = {
+    offscreenR: {
+        x: 300,
+        opacity: 0,
+    },
+    onscreenR: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.3,
+            duration: 1.5,
+        },
+    },
+    offscreenL: {
+        x: -300,
+        opacity: 0,
+    },
+    onscreenL: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.3,
+            duration: 1.5,
+        },
+    },
+};
 
 export const AboutUs: React.FC = () => (
-    <div className="relative bg-black">
+    <div className="relative bg-black overflow-x-hidden">
         {/*//! Hollow Text */}
         <div className="hidden items-center justify-center w-1/2 absolute left-[80rem] bottom-[40%] -rotate-90">
             <h1
@@ -15,7 +45,13 @@ export const AboutUs: React.FC = () => (
         <div className="container mx-auto px-5 md:px-12 lg:px-24 py-20 xl:py-28 space-y-12 xl:space-y-24">
             {/*//// Top */}
             <div className="flex flex-col xl:flex-row items-center space-y-12 xl:space-y-0 xl:space-x-20 bg-black">
-                <div className="xl:w-[50%] relative z-20">
+                <motion.div
+                    className="xl:w-[50%] relative z-20"
+                    variants={swoosh}
+                    initial="offscreenL"
+                    whileInView="onscreenL"
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     <Image
                         src="/meeting.png"
                         alt="Meeting Image"
@@ -24,8 +60,15 @@ export const AboutUs: React.FC = () => (
                         className="object-cover z-20"
                     />
                     <div className="hidden xl:block absolute bg-secondary w-72 h-72 -top-5 -left-6 z-10"></div>
-                </div>
-                <div className="space-y-16 xl:w-[50%]">
+                </motion.div>
+
+                <motion.div
+                    className="space-y-16 xl:w-[50%]"
+                    variants={swoosh}
+                    initial="offscreenR"
+                    whileInView="onscreenR"
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-np font-bold text-center xl:text-left">
                         <span className="underline underline-offset-[30px] decoration-2 decoration-primary">
                             W
@@ -33,7 +76,7 @@ export const AboutUs: React.FC = () => (
                         HO&apos;S INADS
                     </h1>
                     <p className="text-base md:text-xl font-ps font-normal text-center xl:text-left">
-                    INADS established in 2019 as a Media & Advertising company in Qatar. A
+                        INADS established in 2019 as a Media & Advertising company in Qatar. A
                         complete solutions provider for their advertisers with multiple eﬃciencies,
                         including strategic planning, buying clout, social media muscle, content
                         development, mobile media versatility and more planning process to gain a
@@ -41,12 +84,18 @@ export const AboutUs: React.FC = () => (
                         achieve and how to achieve the optimum results in the right set of media
                         channels.
                     </p>
-                </div>
+                </motion.div>
             </div>
 
             {/*//// Bottom */}
             <div className="flex flex-col-reverse xl:flex-row bg-black items-center xl:space-x-20">
-                <div className="space-y-16 xl:w-[50%]">
+                <motion.div
+                    className="space-y-16 xl:w-[50%]"
+                    variants={swoosh}
+                    initial="offscreenL"
+                    whileInView="onscreenL"
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     <p className="text-base md:text-xl font-ps font-normal text-center xl:text-left">
                         We use experts in research to understand how a client&apos;s target
                         consumers think, feel and act about certain things in certain situations
@@ -63,8 +112,15 @@ export const AboutUs: React.FC = () => (
                         settle for anything less than perfect for our clients and consider all their
                         media options, then design a marketing plan that meets their goals.
                     </p>
-                </div>
-                <div className="xl:w-[50%] relative z-20 mb-12 xl:mb-0">
+                </motion.div>
+
+                <motion.div
+                    className="xl:w-[50%] relative z-20 mb-12 xl:mb-0"
+                    variants={swoosh}
+                    initial="offscreenR"
+                    whileInView="onscreenR"
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     <Image
                         src="/art.png"
                         alt="Pointing Image"
@@ -73,7 +129,7 @@ export const AboutUs: React.FC = () => (
                         className="object-cover z-20"
                     />
                     <div className="hidden xl:block absolute bg-secondary w-72 h-[26rem] -top-7 -right-7 z-10"></div>
-                </div>
+                </motion.div>
             </div>
         </div>
     </div>

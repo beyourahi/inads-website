@@ -52,10 +52,15 @@ export const Footer: React.FC = () => (
                             <span className="text-primary text-2xl">
                                 <FaMapMarkerAlt />
                             </span>
-                            <span className="text-lg md:text-base lg:text-lg font-ps font-normal">
+                            <a 
+                                href="https://maps.app.goo.gl/2Vf3RNLtUP4GxQYk6?g_st=iwb"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-lg md:text-base lg:text-lg font-ps font-normal"
+                            >
                                 {PO} <br />
                                 {state}
-                            </span>
+                            </a>
                         </div>
                         <div className="flex items-center space-x-4">
                             <span className="text-primary text-2xl">

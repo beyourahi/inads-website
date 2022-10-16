@@ -1,18 +1,37 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const marqueeVariants = {
+    animate: {
+        x: [0, -1035],
+        transition: {
+            x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 15,
+                ease: "linear",
+            },
+        },
+    },
+};
 
 export const AnalyticsMasthead: React.FC = () => (
     <div className="bg-black relative overflow-clip">
-        <div className="hidden xl:flex items-center justify-center absolute top-0">
+        <motion.div
+            className="hidden xl:flex items-center justify-center absolute top-0"
+            variants={marqueeVariants}
+            animate="animate"
+        >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((obj, index) => (
                 <h1
                     key={index}
-                    className="text-black font-np font-black text-[7rem] opacity-[0.15] tracking-widest"
+                    className="text-black font-np font-black text-9xl opacity-20 tracking-widest"
                     style={{ WebkitTextStroke: "1px white", wordSpacing: "2rem" }}
                 >
                     ANALYTICS
                 </h1>
             ))}
-        </div>
+        </motion.div>
 
         <div className="container mx-auto px-5 md:px-12 lg:px-24 xl:px-36 xl:pt-60 py-16 xl:py-0 xl:pb-28 flex flex-col lg:flex-row items-center space-y-12 lg:space-x-8">
             <div className="flex lg:w-3/5">
