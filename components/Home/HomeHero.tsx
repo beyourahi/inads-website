@@ -1,6 +1,21 @@
-import Image from "next/image";
 import { HiArrowNarrowDown } from "react-icons/hi";
-import play from "../../public/play.png";
+import { motion, Variants } from "framer-motion";
+
+const swoosh: Variants = {
+    offscreen: {
+        y: 300,
+        opacity: 0
+    },
+    onscreen: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.3,
+            duration: 1.5,
+        },
+    },
+};
 
 export const HomeHero: React.FC = () => (
     <div className="h-full flex justify-start items-center relative">
@@ -34,7 +49,13 @@ export const HomeHero: React.FC = () => (
             </div>
 
             {/*//? CTA */}
-            <div className="space-y-8 lg:space-y-10">
+            <motion.div
+                className="space-y-8 lg:space-y-10"
+                variants={swoosh}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true }}
+            >
                 <h1 className="text-5xl md:text-7xl lg:text-[5rem] 2xl:text-8xl font-black font-np xl:w-[80%]">
                     We {""}
                     <span className="text-primary">Believe In </span>
@@ -47,7 +68,7 @@ export const HomeHero: React.FC = () => (
                     Innovation, quality, customer service and reliability are the foundations of our
                     business
                 </h2>
-            </div>
+            </motion.div>
         </div>
 
         {/*//// Arrow  */}
