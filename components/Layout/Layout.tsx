@@ -14,7 +14,7 @@ export const Layout = ({ children, page }: LayoutProps) => {
     const title = brand + " | " + page;
 
     return (
-        <main className="bg-black text-white h-screen relative">
+        <main className="bg-black text-white h-dvh relative">
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />

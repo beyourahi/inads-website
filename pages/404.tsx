@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 
 const Custom404: NextPage = () => (
-    <div className="bg-black text-white h-screen">
+    <div className="bg-black text-white h-dvh">
         <div className="container mx-auto h-full px-8 xl:px-36 flex flex-col justify-center items-center space-y-16">
             <div className="text-center space-y-4">
                 <h1

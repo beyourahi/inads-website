@@ -59,8 +59,8 @@ export const Navbar: React.FC = () => {
             <div
                 className={
                     !nav
-                        ? "fixed top-0 left-0 w-[100%] h-screen bg-black ease-in-out duration-500 flex flex-col justify-between p-8 md:p-16 lg:px-32"
-                        : "fixed top-0 left-[-100%] h-screen ease-out duration-1000"
+                        ? "fixed top-0 left-0 w-[100%] h-dvh bg-black ease-in-out duration-500 flex flex-col justify-between p-8 md:p-16 lg:px-32"
+                        : "fixed top-0 left-[-100%] h-dvh ease-out duration-1000"
                 }
             >
                 <div className="flex flex-col space-y-16">
